@@ -99,14 +99,33 @@ p{
 @media (max-width: 450px) {
   .perfil{
     flex-direction: column;
-    padding: 20px;
+    padding: 60px 30px;
   }
-  .perfil_foto, .perfil_texto{
-    width: 100%;
-    padding: 20px;
+  .perfil_foto{
+    padding-bottom: 30px;
   }
   .perfil_foto img{
     width:280px;
+  }
+  .perfil_texto{
+    padding-left: 5px;
+  }
+  .perfil_texto p{
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+  .perfil_nombre_linea{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .perfil_nombre_linea h1{
+    margin-left: 0;
+  }
+  .perfil_nombre_linea hr{
+    width: 100%;
   }
 }
 
@@ -173,28 +192,43 @@ p{
   color: var(--azul-blanco);
 }
 
+.button2 {
+  display: none;
+}
+
 @media (max-width: 450px) {
   .datos{
-    padding: 30px;
+    padding: 60px 30px;
   }
   .datos_perso { 
     flex-direction: column;
+    gap: 40px;
+  }
+  .exp{
+    display: flex;
+    flex-direction: row;
   }
   .datos_perso h4{
     transform: rotate(0deg);
     padding-top: 30px;
   }
+  .button2 {
+    display: block;
+  }
+  .button {
+    display: none;
+  }
 }
 
 /* portafolio */
 .portafolio{
-  margin: 60px 20px;
+  padding: 60px 30px;
 }
 
 .portafolio h2{
   color:var(--verde);
   text-align: center;
-  margin: 60px 0;
+  margin-bottom: 30px;
 }
 
 .padre {
@@ -245,7 +279,7 @@ p{
 
 @media (max-width: 450px) {
   .portafolio{
-    
+    padding: 60px 30px;
   }
   .portafolio_img{
     width: 300px;
@@ -262,7 +296,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px 0;
+    margin: 60px 0;
 }
 
 .perfiles img{

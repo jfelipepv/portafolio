@@ -202,6 +202,33 @@ p {
   }
 }
 
+@media (max-width: 820px) {
+  .perfil {
+    display: block;
+    padding: 60px 30px;
+  }
+  .perfil_texto {
+    padding-left: 5px;
+  }
+  .perfil_texto p {
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+  .perfil_nombre_linea {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .perfil_nombre_linea h1 {
+    margin-left: 0;
+  }
+  .perfil_nombre_linea hr {
+    width: 100%;
+  }
+}
+
 /* datos */
 .datos {
   background-color: var(--azul-blanco);
@@ -290,6 +317,18 @@ p {
   }
   .button {
     display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .datos {
+    padding: 60px 30px;
+  }
+  .datos_perso{
+    gap: 20px;
+  }
+  .datos_perso h4 {
+    padding-top: 80px;
   }
 }
 
@@ -425,6 +464,27 @@ p {
   .padre {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .hijo{
+    padding: 0 0 30px 0;
+  }
+  .portafolio_img {
+    width: 300px;
+    height: 200px;
+  }
+  .portafolio_img img {
+    width: 240px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 820px) {
+  .portafolio {
+    padding: 60px 30px;
+  }
+  .padre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .hijo{
     padding: 0 0 30px 0;

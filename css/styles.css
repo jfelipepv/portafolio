@@ -58,7 +58,49 @@ p {
 
 /* HEADER */
 
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: var(--azul);
+  width: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 2;
+}
 
+.navbar ul{
+  list-style: none;
+  font-size: 2rem;
+}
+
+.navbar a{
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+#burger i{
+  font-size: 5rem;
+  color: var(--azul-blanco);
+  cursor: pointer;
+}
+
+.menu-item {
+  display: none;
+  padding-top: 30px;
+}
+
+.menu-item i{
+  font-size: 2rem;
+  color: var(--azul-blanco);
+}
+
+.menu-item--active{
+  display: block;
+}
 
 /* MAIN */
 
@@ -80,13 +122,13 @@ p {
   height: 400;
   overflow: hidden;
   padding: 20px;
-
+  
 }
 
 .perfil_foto img {
   width: 100%;
   border-radius: 50%;
-  height: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;  
 }
 
@@ -279,7 +321,7 @@ p {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   width: 120px;
   height: 120px;
-  background-color: var(--verde);
+  background-color: var(--azul-blanco);
   transition: 0.5s ease-in-out;
   /* animation: rotar 3s linear infinite; */
 }
@@ -289,6 +331,10 @@ p {
 }
 
 .herramientas_hijo img{
+  width: 65px;
+}
+
+#imgG{
   width: 50px;
 }
 
@@ -379,6 +425,9 @@ p {
   .padre {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .hijo{
+    padding: 0 0 10px 0;
   }
   .portafolio_img {
     width: 300px;

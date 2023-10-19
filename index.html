@@ -14,12 +14,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="https://kit.fontawesome.com/337f26dd2f.js" crossorigin="anonymous"></script>
 
-    <header>
-        
-    </header>
     <main>
+        <nav class="navbar">
+            <ul>
+                <li id="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#perfil">
+                        Perfil
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-folder"></i>
+                    <a href="#datos">
+                        Datos
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <a href="#herramientas">
+                        Herramientas
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <a href="#portafolio">
+                        Proyectos
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <a href="#perfiles">
+                        Perfiles
+                    </a>
+                </li>
+            </ul>
+        </nav>
           <section id="perfil" class="perfil">
               <div class="perfil_foto">
                   <img src="./images/IMG_1495.jpg" alt="">
@@ -61,16 +94,16 @@
               </div>
           </section>
 
-          <section class="herramientas">
+          <section id="herramientas" class="herramientas">
               <h2 class="titles">HERRAMIENTAS FUERTES</h2>
               <div class="herramientas_padre">
                   <div class="herramientas_hijo"><img src="./images/illustrator.png" alt=""></div>
                   <div class="herramientas_hijo"><img src="./images/photoshop.png" alt=""></div>
                   <div class="herramientas_hijo"><img src="./images/premiere.png" alt=""></div>
                   <div class="herramientas_hijo"><img src="./images/after.png" alt=""></div>
-                  <div class="herramientas_hijo"><img src="./images/figma.png" alt=""></div>
-                  <div class="herramientas_hijo"><img src="./images/html.png" alt=""></div>
-                  <div class="herramientas_hijo"><img src="./images/css.png" alt=""></div>
+                  <div class="herramientas_hijo"><img id="imgG" src="./images/figma.png" alt=""></div>
+                  <div class="herramientas_hijo"><img id="imgG" src="./images/html.png" alt=""></div>
+                  <div class="herramientas_hijo"><img  id="imgG" src="./images/css.png" alt=""></div>
                   <div class="herramientas_hijo"><img src="./images/javascript.png" alt=""></div>
                   <!-- <div class="herramientas_hijo"><img src="./images/elementor.png" alt=""></div> -->
               </div>
@@ -90,7 +123,7 @@
                 </div>
                 <div class="hijo">
                     <div class="portafolio_img"><img src="./images/musica.jpg" alt=""></div>
-                    <h6>Proyecto Musical</h6>
+                    <h6>Proyecto musical</h6>
                     <p><b>Creado con:</b> Photoshop e illustrator.</p>
                     <div class="boton">
                         <a href="https://www.behance.net/gallery/181442635/Proyecto-Musical" target="_blank">Ver más<i class="fa-solid fa-arrow-right"></i></a>
@@ -130,7 +163,7 @@
                 </div>
                 <div class="hijo">
                     <div class="portafolio_img"><img src="./images/memori.PNG" alt=""></div>
-                    <h6>Memorimostruos</h6>
+                    <h6>Memorimonstruos</h6>
                     <p><b>Creado con:</b> HTML, CSS, JavaScript e Illustrator.</p>
                     <div class="boton">
                         <a href="https://acsendo-memorimonstruos.netlify.app/" target="_blank">Ver más<i class="fa-solid fa-arrow-right"></i></a>
@@ -167,5 +200,7 @@
             <a href="https://github.com/jfelipepv" target="_blank"><img src="./images/github.png" alt=""></a>
         </div>
     </footer>
+    <script src="./js/index.js" defer></script>
+      <script src="https://kit.fontawesome.com/337f26dd2f.js" crossorigin="anonymous"></script>
 </body>
 </html>

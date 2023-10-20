@@ -56,7 +56,7 @@ p {
   font-size: 1.6rem;
 }
 
-/* HEADER */
+/* NAVBAR */
 
 .navbar{
   display: flex;
@@ -83,7 +83,7 @@ p {
 }
 
 #burger i{
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--azul-blanco);
   cursor: pointer;
 }
@@ -94,12 +94,17 @@ p {
 }
 
 .menu-item i{
-  font-size: 2rem;
   color: var(--azul-blanco);
 }
 
 .menu-item--active{
   display: block;
+}
+
+@media (max-width: 550px){
+  #burger i{
+    font-size: 3rem;
+  }
 }
 
 /* MAIN */
@@ -110,7 +115,8 @@ p {
   grid-template-columns: 400px 1fr;
   justify-content: center;
   align-items: center;
-  padding: 80px 100px;
+  height: 100vh;
+  padding: 100px;
   animation: EntradaIzq 1000ms ease;
 }
 
@@ -175,9 +181,10 @@ p {
   }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 550px) {
   .perfil {
     display: block;
+    height: fit-content;
     padding: 60px 30px;
   }
   .perfil_texto {
@@ -202,7 +209,7 @@ p {
   }
 }
 
-@media (max-width: 820px) {
+@media (min-width: 551px) and (max-width: 850px) {
   .perfil {
     display: block;
     padding: 60px 30px;
@@ -296,7 +303,7 @@ p {
   display: none;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 550px) {
   .datos {
     padding: 60px 30px;
   }
@@ -320,7 +327,7 @@ p {
   }
 }
 
-@media (max-width: 820px) {
+@media (min-width: 551px) and (max-width: 850px) {
   .datos {
     padding: 60px 30px;
   }
@@ -386,7 +393,7 @@ p {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .herramientas {
     padding: 60px 30px;
   }
@@ -457,7 +464,7 @@ p {
   margin-left: 10px;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 550px) {
   .portafolio {
     padding: 60px 30px;
   }
@@ -478,7 +485,7 @@ p {
   }
 }
 
-@media (max-width: 820px) {
+@media (min-width: 551px) and (max-width: 850px) {
   .portafolio {
     padding: 60px 30px;
   }

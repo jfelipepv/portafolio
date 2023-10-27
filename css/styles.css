@@ -24,17 +24,17 @@ body {
 
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 3.4rem;
+  font-size: 3.6rem;
 }
 
 h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.9rem;
+  font-size: 3rem;
 }
 
 h4 {
@@ -131,7 +131,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#222222, #22222297, #222222);
+  background: linear-gradient(#222222, #222222b6, #222222);
   left: 0;
   top: 0;
 }
@@ -220,13 +220,13 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 550px) {
+@media (max-width: 767px) {
   .inicio{
     padding: 60px 30px;
   }
 }
 
-@media (min-width: 551px) and (max-width: 850px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .inicio {
     padding: 60px 30px;
   }
@@ -263,13 +263,13 @@ p {
   padding-left: 150px;
 }
 
-.sobremi_texto h4 {
+.sobremi_texto h3 {
   color: var(--verde);
-  line-height: 26px;
+  line-height: 3rem;
 }
 
 .sobremi_texto span{
-  font-size: 3.4rem;
+  font-size: 3.6rem;
 }
 
 .sobremi_texto a{
@@ -286,7 +286,7 @@ p {
   padding-right: 100px;
 }
 
-@media (min-width: 320px) and (max-width: 550px) {
+@media (max-width: 767px) {
   .sobremi {
     display: block;
     height: fit-content;
@@ -305,7 +305,7 @@ p {
   }
 }
 
-@media (min-width: 551px) and (max-width: 850px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .sobremi {
     
     height: fit-content;
@@ -325,12 +325,20 @@ p {
 .herramientas{
   padding: 100px;
   height: 100vh;
+  display: grid;
+  align-items: center;
+  flex-direction: column;
 }
 
-.herramientas h2 {
+.herramientas h3 {
   color: var(--verde);
   text-align: center;
   padding-bottom: 30px;
+  line-height: 3rem;
+}
+
+.herramientas span{
+  font-size: 3.6rem;
 }
 
 .herramientas_padre{
@@ -360,7 +368,7 @@ p {
   filter: drop-shadow(5px 5px);
 }
 
-@media (min-width: 320px) and (max-width: 550px) {
+@media (max-width: 767px) {
   .herramientas{
     height: fit-content;
     padding: 60px 30px;
@@ -373,7 +381,7 @@ p {
   }
 }
 
-@media (min-width: 551px) and (max-width: 850px){
+@media (min-width: 768px) and (max-width: 1023px){
   .herramientas{
     height: fit-content;
     padding: 60px 30px;
@@ -382,13 +390,18 @@ p {
 
 /* portafolio */
 .portafolio {
-  padding: 80px 30px;
+  padding: 100px 30px;
 }
 
-.portafolio h2 {
+.portafolio h3 {
   color: var(--verde);
   text-align: center;
   margin-bottom: 30px;
+  line-height: 3rem;
+}
+
+.portafolio span{
+  font-size: 3.6rem;
 }
 
 .padre {
@@ -428,8 +441,12 @@ p {
   padding: 30px;
 }
 
-.hijo h6, p {
+.hijo h6 {
   color: var(--azul-blanco);
+}
+
+.hijo p {
+  color: var(--blanco);
 }
 
 .boton a, i {
@@ -441,7 +458,7 @@ p {
   margin-left: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 550px) {
+@media (max-width: 767px) {
   .portafolio {
     padding: 60px 30px;
   }
@@ -462,7 +479,7 @@ p {
   }
 }
 
-@media (min-width: 551px) and (max-width: 850px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .portafolio {
     padding: 60px 30px;
   }

@@ -65,7 +65,7 @@ p {
   position: fixed;
   top: 20px;
   left: 20px;
-  background-color: var(--azul);
+  background-color: var(--verde);
   width: fit-content;
   padding: 15px;
   border-radius: 10px;
@@ -79,23 +79,28 @@ p {
 }
 
 .navbar a{
-  color: var(--blanco);
+  color: var(--negro);
   text-decoration: none;
 }
 
 #burger i{
   font-size: 4rem;
-  color: var(--azul-blanco);
+  color: var(--negro);
   cursor: pointer;
 }
 
 .menu-item {
   display: none;
-  padding-top: 30px;
+  width: fit-content;
+  padding: 15px 0;
+}
+
+.menu-item:hover i{
+  transform: scale(1.2);
 }
 
 .menu-item i{
-  color: var(--azul-blanco);
+  color: var(--negro);
 }
 
 .menu-item--active{
@@ -110,6 +115,75 @@ p {
 
 /* MAIN */
 
+/* Inicio */
+.inicio {  
+  /* background-image: url(https://images.pexels.com/photos/6476587/pexels-photo-6476587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 100px;
+  animation: EntradaIzq 1000ms ease;
+}
+
+.inicio_content{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inicio_content span{
+  font-size: 6rem;
+}
+
+.inicio_content h1{
+  color: var(--verde);
+  line-height: 45px;
+}
+
+.inicio_content h2{
+  color: var(--azul-blanco);
+}
+
+.button {
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--verde);
+  color: var(--negro);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+/* animacion entrada */
+
+@keyframes EntradaIzq {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 550px) {
+  .inicio{
+    padding: 60px 30px;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 850px) {
+  .inicio {
+    padding: 60px 30px;
+  }
+}
+
 /* perfil */
 .perfil {
   display: grid;
@@ -118,7 +192,6 @@ p {
   align-items: center;
   height: 100vh;
   padding: 100px;
-  animation: EntradaIzq 1000ms ease;
 }
 
 .perfil_foto{
@@ -145,41 +218,26 @@ p {
 
 .perfil_nombre_linea {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.perfil_nombre_linea h1 {
+.perfil_nombre_linea h4 {
   color: var(--verde);
-  margin-left: 30px;
+  line-height: 26px;
 }
 
-.perfil_nombre_linea hr {
-  height: 3px;
-  width: 20%;
-  background-color: var(--verde);
-  border-radius: 10px;
+.perfil_nombre_linea span{
+  font-size: 3.4rem;
 }
 
-.perfil_texto h3 {
+.perfil_nombre_linea h5 {
   color: var(--azul-blanco);
-  margin-bottom: 30px;
 }
 
 .perfil_texto p {
-  color: var(--azul-blanco);
-  margin-bottom: 30px;
+  color: var(--blanco);
+  margin-top: 30px;
   padding-right: 100px;
-}
-
-/* animacion entrada */
-
-@keyframes EntradaIzq {
-  from {
-    transform: translateX(-200%);
-  }
-  to {
-    transform: translateX(0);
-  }
 }
 
 @media (min-width: 320px) and (max-width: 550px) {
@@ -200,17 +258,7 @@ p {
     padding-right: 0;
   }
   .perfil_nombre_linea {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 5px;
     margin-bottom: 20px;
-  }
-  .perfil_nombre_linea h1 {
-    margin-left: 0;
-  }
-  .perfil_nombre_linea hr {
-    width: 70%;
   }
 }
 
@@ -242,113 +290,11 @@ p {
   }
 }
 
-/* datos */
-.datos {
-  background-color: var(--azul-blanco);
-  padding: 80px 30px;
-}
-
-.datos h2 {
-  color: var(--azul);
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.datos_perso {
-  display: flex;
-  gap: 80px;
-}
-
-.datos_perso h4 {
-  color: var(--azul);
-  transform: rotate(270deg);
-  padding-top: 120px;
-}
-
-.datos_perso1 {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.datos_perso1 p {
-  color: var(--negro);
-}
-
-.datos_perso1 a {
-  padding: 15px;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: var(--azul);
-  color: var(--azul-blanco);
-  border-radius: 10px;
-  text-decoration: none;
-  transition: 0.5s ease-in-out;
-}
-
-.datos_perso1 a:hover {
-  transform: scale(1.05);
-}
-
-.datos_perso1 div {
-  width: 140px;
-  height: 80px;
-  background: var(--azul);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.datos_perso1 h6 {
-  color: var(--azul-blanco);
-}
-
-.button2 {
-  display: none;
-}
-
-@media (min-width: 320px) and (max-width: 550px) {
-  .datos {
-    padding: 60px 30px;
-  }
-  .datos_perso {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .exp {
-    display: flex;
-    flex-direction: row;
-  }
-  .datos_perso h4 {
-    transform: rotate(0deg);
-    padding-top: 30px;
-  }
-  .button2 {
-    display: block;
-  }
-  .button {
-    display: none;
-  }
-}
-
-@media (min-width: 551px) and (max-width: 850px) {
-  .datos {
-    padding: 60px 30px;
-  }
-  .datos_perso{
-    gap: 20px;
-  }
-  .datos_perso h4 {
-    padding-top: 80px;
-  }
-}
-
 /* herramientas */
 
 .herramientas{
-  padding: 80px 30px; 
+  padding: 100px;
+  height: 100vh;
 }
 
 .herramientas h2 {
@@ -362,7 +308,7 @@ p {
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 4rem;
+  grid-column-gap: 0.1rem;
   grid-row-gap: 4rem;
 }
 
@@ -370,12 +316,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   width: 120px;
   height: 120px;
-  background-color: var(--azul-blanco);
   transition: 0.5s ease-in-out;
-  /* animation: rotar 3s linear infinite; */
 }
 
 .herramientas_hijo:hover {
@@ -383,25 +326,13 @@ p {
 }
 
 .herramientas_hijo img{
-  width: 65px;
-}
-
-#imgG{
-  width: 50px;
-}
-
-@keyframes rotar {
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
+  width: 90px;
+  filter: drop-shadow(5px 5px);
 }
 
 @media (max-width: 550px) {
-  .herramientas {
-    padding: 60px 30px;
+  .herramientas{
+    padding: 0;
   }
   .herramientas_padre{
     display: grid;
@@ -437,6 +368,7 @@ p {
   height: 250px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px black;;
   transition: 0.5s ease-in-out;
 }
 
@@ -539,7 +471,7 @@ p {
   }
 }
 
-.datos_perso, .titles, .hijo, .herramientas_padre {
+.perfil, .titles, .hijo, .herramientas_padre {
   view-timeline-name: --image;
   view-timeline-axis: block;
 

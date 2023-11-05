@@ -330,40 +330,36 @@ p {
 
 /* herramientas */
 
-.herramientas{
+.historia{
   padding: 100px;
-  height: 100vh;
   display: grid;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 6rem;
+}
+
+.herramientas{
+  display: flex;
   flex-direction: column;
 }
 
-.herramientas h3 {
+.historia_title {
   color: var(--verde);
-  text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   line-height: 3rem;
+  max-width: 240px;
 }
 
-.herramientas span{
+.historia_title span{
   font-size: 3.6rem;
-}
-
-.herramientas_padre{
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 0.1rem;
-  grid-row-gap: 4rem;
 }
 
 .herramientas_hijo{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  gap: 20px;
+  width: 220px;
+  height: 100px;
   transition: 0.5s ease-in-out;
 }
 
@@ -372,26 +368,53 @@ p {
 }
 
 .herramientas_hijo img{
-  width: 90px;
+  width: 70px;
   filter: drop-shadow(5px 5px);
 }
 
+.herramientas_hijo p{
+  color: var(--blanco);
+}
+
+.experiencia{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.experiencia_container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experiencia-content h6{
+  color: var(--azul-blanco);
+}
+
+.experiencia-content h4{
+  color: var(--verde);
+}
+
+.experiencia-content p{
+  color: var(--blanco);
+}
+
+.experiencia-content a{
+  color: var(--blanco);
+  font-size: 1.6rem;
+}
+
 @media (max-width: 767px) {
-  .herramientas{
-    height: fit-content;
+  .historia{
     padding: 60px 30px;
-  }
-  .herramientas_padre{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 6rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-  .herramientas{
-    height: fit-content;
+  .historia{
     padding: 60px 30px;
   }
 }
@@ -534,7 +557,7 @@ p {
   }
 }
 
-.sobremi, .titles, .hijo, .herramientas_padre {
+.sobremi, .titles, .hijo, .historia {
   view-timeline-name: --image;
   view-timeline-axis: block;
 

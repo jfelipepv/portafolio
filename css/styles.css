@@ -405,6 +405,11 @@ p {
   font-size: 1.6rem;
 }
 
+.experiencia-content i{
+  color: var(--blanco);
+  padding-left: 5px;
+}
+
 @media (max-width: 767px) {
   .historia{
     padding: 60px 30px;
@@ -482,11 +487,11 @@ p {
 
 .boton a, i {
   color: var(--verde);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .boton i {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 @media (max-width: 767px) {
@@ -499,7 +504,8 @@ p {
   }
   .hijo{
     width: 250px;
-    padding: 0 0 30px 0;
+    padding: 0 0 40px 0;
+    gap: 10px;
   }
   .portafolio_img {
     height: 200px;
@@ -520,7 +526,8 @@ p {
   }
   .hijo{
     width: 250px;
-    padding: 0 0 30px 0;
+    padding: 0 0 40px 0;
+    gap: 10px;
   }
   .portafolio_img {
     height: 200px;

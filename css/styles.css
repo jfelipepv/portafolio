@@ -131,7 +131,7 @@ p {
   align-items: center;
   height: 100vh;
   padding: 100px;
-  animation: EntradaIzq 1000ms ease;
+  animation: opacidad 2000ms ease;
 }
 
 .inicio_grad{
@@ -149,6 +149,7 @@ p {
   gap: 30px;
   position: relative;
   z-index: 2;
+  animation: EntradaIzq 1500ms ease;
 }
 
 .inicio_content span{
@@ -175,6 +176,7 @@ p {
   border-radius: 10px;
   text-decoration: none;
   transition: 0.5s ease-in-out;
+  filter: drop-shadow(5px 5px);
 }
 
 .button:hover {
@@ -190,6 +192,7 @@ p {
   border: 2px solid var(--blanco);
   border-radius: 2px;
   animation: jumpInfinite 1.5s infinite;
+  filter: drop-shadow(5px 5px);
 }
 
 .down-arrow:after {
@@ -228,6 +231,15 @@ p {
   }
 }
 
+@keyframes opacidad {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .inicio{
     padding: 60px 30px;
@@ -258,6 +270,7 @@ p {
   height: 400px;
   overflow: hidden;
   padding: 20px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .sobremi_foto img {
@@ -394,6 +407,7 @@ p {
 
 .experiencia-content h4{
   color: var(--verde);
+  line-height: 2.8rem;
 }
 
 .experiencia-content p{
@@ -455,7 +469,7 @@ p {
   height: 250px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 5px black;;
+  box-shadow: 5px 5px 5px black;
   transition: 0.5s ease-in-out;
 }
 
@@ -505,7 +519,7 @@ p {
   .hijo{
     width: 250px;
     padding: 0 0 40px 0;
-    gap: 10px;
+    gap: 15px;
   }
   .portafolio_img {
     height: 200px;
@@ -527,7 +541,7 @@ p {
   .hijo{
     width: 250px;
     padding: 0 0 40px 0;
-    gap: 10px;
+    gap: 15px;
   }
   .portafolio_img {
     height: 200px;
@@ -549,6 +563,12 @@ p {
 .perfiles img {
   width: 51px;
   margin: 0 10px;
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(5px 5px #000000);
+}
+
+.perfiles img:hover {
+  transform: scale(1.1);
 }
 
 /*SCROLL*/

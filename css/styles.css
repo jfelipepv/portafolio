@@ -134,6 +134,12 @@ p {
   animation: opacidad 2000ms ease;
 }
 
+.inicio p{
+  color: var(--blanco);
+  position: absolute;
+  top: 10%;
+}
+
 .inicio_grad{
   position: absolute;
   width: 100%;
@@ -243,6 +249,11 @@ p {
 @media (max-width: 767px) {
   .inicio{
     padding: 60px 30px;
+  }
+  .inicio p{
+    color: var(--blanco);
+    position: absolute;
+    top: 10%;
   }
 }
 
@@ -562,7 +573,7 @@ p {
 
 .perfiles img {
   width: 51px;
-  margin: 0 10px;
+  margin: 0 20px;
   transition: 0.5s ease-in-out;
   filter: drop-shadow(5px 5px #000000);
 }

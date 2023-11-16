@@ -493,6 +493,10 @@ p {
   object-fit: cover;
 }
 
+#portafolio_img-id img{
+  object-position: 50% 5%;
+}
+
 .hijo {
   width: 350px;
   display: flex;

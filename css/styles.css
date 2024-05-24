@@ -118,7 +118,7 @@ hr {
 
 @media only screen and (max-width: 430px){
   .about_me{
-    padding: 0 16px;
+    padding: 48px 16px;
   }
 
   .about_me p{

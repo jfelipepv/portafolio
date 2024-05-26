@@ -16,10 +16,11 @@ body {
 
 :root {
   --blanco: #ffffff;
+  --negro: #151515;
+  --gris: #555555;
   --azul-blanco: #e0ebf5;
   --verde: #6bdd4e;
   --azul: #3b658b;
-  --negro: #222222;
 }
 
 h1 {
@@ -61,6 +62,25 @@ h6 {
 p {
   font-size: 2.4rem;
   font-weight: 400;
+  color: var(--gris);
+}
+
+@media only screen and (max-width: 430px){
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3.2rem;
+  }
+  h3, h4{
+    font-size: 2.4rem;
+  }
+  h5, h6{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.6rem;
+  }
 }
 
 /* Sobre mi */
@@ -71,8 +91,8 @@ p {
   flex-direction: column;
   justify-content: center;
   gap: 32px;
-  height: 100vh;
   padding: 0 30px;
+  margin: 64px 0;
 }
 
 /* .esfera{
@@ -86,6 +106,10 @@ p {
 .foto{
   width: 120px;
   clip-path: circle(40% at 50% 50%);
+}
+
+.about_me h1{
+  color: var(--negro);
 }
 
 .about_me p{
@@ -113,17 +137,13 @@ p {
 hr {
   height: 4px;
   width: 80px;
-  background-color: #222222;
+  background-color: var(--negro);
 }
 
 @media only screen and (max-width: 430px){
   .about_me{
     padding: 0 16px;
     margin: 48px 0;
-  }
-
-  .about_me p{
-    font-size: 1.6rem;
   }
 
   .about_me a{
@@ -134,10 +154,62 @@ hr {
   .about_me--nombre{
     display: flex;
     flex-wrap: wrap;
-
+    gap: 16px;
   }
-  .about_me--nombre h1{
-    font-size: 4rem;
+
+  hr {
+    width: 50px;
+  }
+}
+
+/* experiencia */
+
+.experiencia{
+  margin: 64px 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.experiencia h2, h3, h5, h6{
+  color: var(--negro);
+}
+
+.experiencia_tarjetas--container{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.tarjetas--content{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 1px solid #151515;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.tarjetas--content_titles{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media only screen and (max-width: 430px){
+  .experiencia{
+    margin: 48px 0;
+    padding: 0 16px;
+    gap: 32px;
+  }
+
+  .experiencia_tarjetas--container{
+    gap: 24px;
+  }
+
+  .tarjetas--content{
+    padding: 24px;
   }
 }
 
@@ -156,9 +228,12 @@ footer{
   border-radius: 50px 50px 0 0;
 }
 
+footer a{
+  text-decoration: none;
+}
+
 footer h6{
-  font-size: 4.8rem;
-  color: white;
+  color: var(--blanco);
 }
 
 .redes{
@@ -173,13 +248,5 @@ footer h6{
     gap: 32px;
     color: var(--blanco);
     border-radius: 50px 50px 0 0;
-  }
-
-  footer h2{
-    font-size: 3.2rem;
-  }
-
-  footer h6{
-    font-size: 2rem;
   }
 }

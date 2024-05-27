@@ -162,6 +162,14 @@ hr {
   }
 }
 
+@media screen and (min-width: 431px) and (max-width: 1024px){
+  .about_me--nombre{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
 /* experiencia */
 
 .experiencia{
@@ -249,13 +257,30 @@ hr {
 }
 
 @media only screen and (max-width: 430px){
+  .habilidades{
+    gap: 48px;
+    padding: 0 16px;
+  }
+  .habilidades_container{
+    gap: 24px;
+  }
   .habilidades_container--content{
     flex-wrap: wrap;
+    gap: 16px;
   }
   
   .habilidades--tools p{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
+  }
+  .habilidades--tools img{
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px){
+  .habilidades_container--content{
+    flex-wrap: wrap;
   }
 }
 

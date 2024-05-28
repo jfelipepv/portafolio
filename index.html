@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <a href="/" class="logo"><img src="./images/logo.svg" alt=""></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#experiencia_laboral">Experiencia laboral</a></li>
+          <li><a href="#habilidades">Mis habilidades</a></li>
+          <!-- <li><a href="#careers">Educación</a></li>
+          <li><a href="#careers">Proyectos</a></li> -->
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </header>
     <main>
         <div class="about_me">
-            <!-- <img class="esfera" src="./images/fondo.svg" alt=""> -->
             <img class="foto" src="./images/IMG_1495.jpg" alt="">
             <div class="about_me--nombre">
                 <h1>Hola, soy Juan Felipe</h1>
@@ -27,8 +39,8 @@
             <a href="./docs/HDV - Juan Felipe Peña V.pdf" download="HDV - Juan Felipe Peña V.pdf">Descargar HV</a>
         </div>
 
-        <div class="experiencia">
-            <h2>Experiencia Laboral</h2>
+        <div id="experiencia_laboral" class="experiencia">
+            <h2>Experiencia laboral</h2>
             <div class="experiencia_tarjetas--container">
                 <div class="tarjetas--content">
                     <div class="tarjetas--content_titles">
@@ -57,7 +69,7 @@
             </div>
         </div>
 
-        <div class="habilidades">
+        <div id="habilidades" class="habilidades">
             <h2>Mis habilidades</h2>
             <div class="habilidades_container">
                 <h4>UX/UI y herramientas gráficas:</h4>
@@ -121,10 +133,10 @@
         </div>
 
     </main>
-    <footer>
+    <footer id="contacto">
         <h2>
             <h2>Trabajemos juntos:</h2>
-            <a href=""><h6>felipe23pena@gmail.com</h6></a>
+            <a href="mailto:felipe23pena@gmail.com"><h6>felipe23pena@gmail.com</h6></a>
             <div class="redes">
                 <a href="https://www.linkedin.com/in/juan-felipe-pe%C3%B1a-vacilescu/" target="__blank"><img src="./images/linkedin.svg" alt=""></a>
                 <a href="https://www.behance.net/felipepea11" target="__blank"><img src="./images/behance.svg" alt=""></a>

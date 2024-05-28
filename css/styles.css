@@ -7,11 +7,15 @@
 html {
   font-family: "Urbanist", sans-serif;
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--blanco);
+  /* background-color: var(--blanco); */
+  background-image: url("/images/semi-circulo.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center -12%;
 }
 
 :root {
@@ -19,8 +23,8 @@ body {
   --negro: #151515;
   --gris: #555555;
   --azul-blanco: #e0ebf5;
-  --verde: #6bdd4e;
-  --azul: #3b658b;
+  --rojo: #FF575A;
+  --lila: #717BBC;
 }
 
 h1 {
@@ -81,6 +85,158 @@ p {
   p{
     font-size: 1.6rem;
   }
+  main{
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1440px){
+  main{
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1441px){
+  main{
+    padding: 0 120px;
+  }
+}
+
+/* header */
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  font-family: "Urbanist", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--negro);
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+  color: var(--lila);
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
 /* Sobre mi */
@@ -91,17 +247,8 @@ p {
   flex-direction: column;
   justify-content: center;
   gap: 32px;
-  padding: 0 30px;
-  margin: 64px 0;
+  margin: 144px 0 64px 0;
 }
-
-/* .esfera{
-  width: 1400px;
-  position: absolute;
-  bottom: 50%;
-  left: 0%;
-  z-index: -2;
-} */
 
 .foto{
   width: 120px;
@@ -142,8 +289,7 @@ hr {
 
 @media only screen and (max-width: 430px){
   .about_me{
-    padding: 0 16px;
-    margin: 48px 0;
+    margin: 128px 0 48px 0;
   }
 
   .about_me a{
@@ -174,7 +320,8 @@ hr {
 
 .experiencia{
   margin: 64px 0;
-  padding: 0 30px;
+  padding-top: 73px;
+  margin-top: -73px;
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -208,7 +355,8 @@ hr {
 @media only screen and (max-width: 430px){
   .experiencia{
     margin: 48px 0;
-    padding: 0 16px;
+    padding-top: 73px;
+    margin-top: -73px;
     gap: 32px;
   }
 
@@ -225,7 +373,8 @@ hr {
 
 .habilidades{
   margin: 64px 0;
-  padding: 0 30px;
+  padding-top: 73px;
+  margin-top: -73px;
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -258,8 +407,10 @@ hr {
 
 @media only screen and (max-width: 430px){
   .habilidades{
+    margin: 48px 0;
+    padding-top: 73px;
+    margin-top: -73px;
     gap: 48px;
-    padding: 0 16px;
   }
   .habilidades_container{
     gap: 24px;

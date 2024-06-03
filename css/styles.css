@@ -451,17 +451,18 @@ hr {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 64px;
+  gap: 48px;
 }
 
 .article-card {
-  width: 350px;
-  height: 220px;
-  border-radius: 12px;
+  width: 27vw;
+  height: 250px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 300ms;
+
 }
 
 .article-card:hover {
@@ -473,6 +474,10 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.top-card img{
+  object-position: top;
 }
 
 .article-card .content {
@@ -498,7 +503,7 @@ hr {
 
 .article-card .title {
   font-size: 16px;
-  color: #fff;
+  color: var(--blanco);
 }
 
 @media only screen and (max-width: 430px){
@@ -510,6 +515,9 @@ hr {
   }
   .proyectos_container{
     gap: 24px;
+  }
+  .article-card{
+    width: 92vw;
   }
 }
 

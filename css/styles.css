@@ -12,10 +12,7 @@ html {
 
 body {
   /* background-color: var(--blanco); */
-  background-image: url("/images/semi-circulo.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center -12%;
+
 }
 
 :root {
@@ -64,7 +61,7 @@ h6 {
 }
 
 p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
   color: var(--gris);
 }
@@ -85,28 +82,12 @@ p {
   p{
     font-size: 1.6rem;
   }
-  main{
-    padding: 0 16px;
-  }
-}
-
-@media screen and (min-width: 431px) and (max-width: 1440px){
-  .header, main{
-    padding: 0 30px;
-  }
-}
-
-@media screen and (min-width: 1441px){
-  .header, main{
-    padding: 0 120px;
-  }
 }
 
 /* header */
 
 .header {
-  background-color: var(--blanco);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   top: 0;
@@ -119,13 +100,11 @@ p {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
@@ -135,7 +114,6 @@ p {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
   color: var(--lila);
 }
 
@@ -243,12 +221,27 @@ p {
 /* Sobre mi */
 
 .about_me{
-  display: flex;
   position: relative;
+  max-height: 900px;
+  padding: 128px 0 64px 0;
+  /* background-color: #F1F3FF; */
+
+  background: #F1F3FF;
+  background-image: url("/images/semi-circulo.svg");
+  background-repeat: no-repeat;
+  background-position: center -12%;
+  background-size: auto;
+
+}
+
+.about_me__container{
+  display: flex;
+  gap: 32px;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
-  margin: 144px 0 64px 0;
+  max-width: 1680px;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .foto{
@@ -260,8 +253,18 @@ p {
   color: var(--negro);
 }
 
+#span--title{
+  color: var(--blanco);
+}
+
+.about_me span{
+  background-color: var(--lila);
+  border-radius: 100px;
+  padding: 8px 40px;
+}
+
 .about_me p{
-  max-width: 720px;
+  max-width: 950px;
 }
 
 .about_me a{
@@ -273,7 +276,8 @@ p {
   font-weight: 700;
   color: var(--blanco);
   padding: 16px 64px;
-  background-color: var(--negro);
+  background-color: var(--rojo);
+  display: block;
 }
 
 .about_me--nombre{
@@ -290,7 +294,7 @@ hr {
 
 @media only screen and (max-width: 430px){
   .about_me{
-    margin: 128px 0 48px 0;
+    margin: 48px 0 48px 0;
   }
 
   .about_me a{
@@ -320,22 +324,37 @@ hr {
 /* experiencia */
 
 .experiencia{
-  margin: 64px 0;
-  padding-top: 73px;
-  margin-top: -73px;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   gap: 56px;
+  width: 95%;
 }
 
 .experiencia h2, h3, h5, h6{
   color: var(--negro);
 }
 
+.experiencia h4{
+  font-size: 2.4rem;
+  color: var(--lila);
+}
+
+.experiencia h5{
+  font-size: 1.8rem;
+}
+
+.experiencia h6{
+  font-size: 1.6rem;
+  color: var(--gris);
+}
+
 .experiencia_tarjetas--container{
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
 }
 
 .tarjetas--content{
@@ -350,7 +369,7 @@ hr {
 .tarjetas--content_titles{
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 @media only screen and (max-width: 430px){
@@ -368,14 +387,17 @@ hr {
   .tarjetas--content{
     padding: 24px;
   }
+  .tarjetas--content_titles{
+    gap: 8px;
+  }
 }
 
 /* habilidades */
 
 .habilidades{
   margin: 64px 0;
-  padding-top: 73px;
-  margin-top: -73px;
+  padding: 73px 0;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -384,12 +406,15 @@ hr {
 .habilidades_container{
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
+  width: 95%;
+  max-width: 1680px;
+  margin: 0 auto;
 }
 
 .habilidades_container--content{
   display: flex;
-  gap: 32px;
+  gap: 16px;
 }
 
 .habilidades--tools{
@@ -402,8 +427,12 @@ hr {
 }
 
 .habilidades--tools p{
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
+}
+
+.habilidades--tools img{
+  width: 32px;
 }
 
 @media only screen and (max-width: 430px){
@@ -414,13 +443,15 @@ hr {
     gap: 48px;
   }
   .habilidades_container{
-    gap: 24px;
+    gap: 16px;
   }
   .habilidades_container--content{
     flex-wrap: wrap;
     gap: 16px;
   }
-  
+  .habilidades--tools{
+    gap: 16px;
+  }
   .habilidades--tools p{
     font-size: 1.6rem;
     font-weight: 700;
@@ -439,7 +470,9 @@ hr {
 /* Proyectos */
 
 .proyectos{
-  margin: 64px 0;
+  max-width: 1680px;
+  width: 95%; 
+  margin: 64px auto;
   padding-top: 73px;
   margin-top: -73px;
   display: flex;

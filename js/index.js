@@ -2,6 +2,7 @@ console.log('ready');
 
 
 const menuItems= document.getElementsByClassName('menu-item')
+const menuIcon= document.querySelector('menu-icon')
 
 const toggleBurger = document.getElementById('burger').addEventListener('click',()=>{
   console.log('click');

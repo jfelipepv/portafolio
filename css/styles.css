@@ -229,13 +229,13 @@ p {
   position: relative;
   max-height: 900px;
   padding: 128px 0 64px 0;
-  /* background-color: #F1F3FF; */
-  background: linear-gradient(270deg, #f1f3ff, #ffe4e5);
+  background-color: #F1F3FF;
+  /* background: linear-gradient(270deg, #f1f3ff, #ffe4e5);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 17s ease infinite;
     -moz-animation: AnimationName 17s ease infinite;
-    animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite; */
 }
 
 @-webkit-keyframes AnimationName {
@@ -457,7 +457,7 @@ hr {
 .habilidades--tools{
   display: flex;
   align-items: center;
-  gap: px;
+  gap: 16px;
   padding: 16px 24px;
   background-color: var(--azul-blanco);
   border-radius: 10px;

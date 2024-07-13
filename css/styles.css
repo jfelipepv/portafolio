@@ -310,6 +310,16 @@ hr {
     width: 100%;
   }
 
+  .about_me__container{
+    padding: 20px;
+    border-radius: 25px;
+    gap: 25px;
+  }
+
+  .about_me span{
+    padding: 8px 24px;
+  }
+
   .about_me--nombre{
     display: flex;
     flex-wrap: wrap;
@@ -391,11 +401,11 @@ hr {
     margin: 48px auto;
     padding-top: 73px;
     margin-top: -73px;
-    gap: 32px;
+    gap: 40px;
   }
 
   .experiencia_tarjetas--container{
-    gap: 24px;
+    gap: 20px;
   }
 
   .tarjetas--content{
@@ -561,13 +571,13 @@ hr {
     margin: 48px auto;
     padding-top: 73px;
     margin-top: -73px;
-    gap: 48px;
+    gap: 40px;
   }
   .proyectos_container{
     gap: 20px;
   }
   .article-card{
-    width: 92vw;
+    width: 95vw;
   }
 }
 

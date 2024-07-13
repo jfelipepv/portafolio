@@ -241,8 +241,12 @@ p {
   margin: 0 auto;
   width: 95%;
   padding: 40px;
-  background-color: var(--blanco);
+  /* background-color: var(--blanco); */
   border-radius: 50px;
+  background: url('../images/Cuadricula.svg'), var(--blanco);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .foto{
@@ -516,7 +520,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .article-card {

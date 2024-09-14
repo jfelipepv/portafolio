@@ -11,16 +11,16 @@ html {
 }
 
 body {
-  /* background-color: var(--blanco); */
+  background-color: var(--negro);
 }
 
 :root {
   --blanco: #ffffff;
-  --negro: #151515;
+  --negro: #030F0F;
   --gris: #555555;
   --azul-blanco: #DEE8FF;
-  --rojo: #FF575A;
-  --azul: #283AEA;
+  --rojo: #00DF82;
+  --azul: #2CC295;
 }
 
 h1 {
@@ -86,7 +86,7 @@ p {
 /* header */
 
 .header {
-  background-color: var(--blanco);
+  background-color: #092A2A;
   /* backdrop-filter: blur(80px); */
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
@@ -114,12 +114,12 @@ p {
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
   font-weight: 500;
-  color: var(--negro);
+  color: var(--blanco);
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  color: var(--azul);
+  color: var(--rojo);
 }
 
 .header .logo {
@@ -150,7 +150,7 @@ p {
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #ffffff;
   display: block;
   height: 2px;
   position: relative;
@@ -160,7 +160,7 @@ p {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #ffffff;
   content: '';
   display: block;
   height: 100%;
@@ -229,7 +229,6 @@ p {
   position: relative;
   max-height: 900px;
   padding: 128px 0 64px 0;
-  background-color: var(--azul-blanco)
 }
 
 .about_me__container{
@@ -243,7 +242,7 @@ p {
   padding: 40px;
   /* background-color: var(--blanco); */
   border-radius: 50px;
-  background: url('../images/Cuadricula.svg'), var(--blanco);
+  /* background: url('../images/Cuadricula.svg'), var(--blanco); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -255,32 +254,37 @@ p {
 }
 
 .about_me h1{
-  color: var(--negro);
+  color: #AACBC4;
 }
 
 #span--title{
   color: var(--blanco);
 }
 
-.about_me span{
+/* .about_me span{
   background-color: var(--azul);
   border-radius: 100px;
   padding: 8px 40px;
   white-space: nowrap;
+} */
+
+.about_me span{
+  color: var(--rojo);
 }
 
 .about_me p{
   max-width: 950px;
+  color: var(--blanco);
 }
 
 .about_me a{
   width: 280px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   font-size: 2.4rem;
   font-weight: 700;
-  color: var(--blanco);
+  color: var(--negro);
   padding: 16px 64px;
   background-color: var(--rojo);
   display: block;
@@ -289,7 +293,7 @@ p {
 
 .about_me a:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(40, 58, 234, 0.8), 0 10px 10px rgba(40, 58, 234, 0.8);
+  box-shadow: 0 14px 28px rgba(44, 194, 149, 0.4), 0 10px 10px rgba(44, 194, 149, 0.4);
 }
 
 .about_me--nombre{
@@ -320,9 +324,9 @@ hr {
     gap: 25px;
   }
 
-  .about_me span{
+  /* .about_me span{
     padding: 8px 24px;
-  }
+  } */
 
   .about_me--nombre{
     display: flex;
@@ -355,22 +359,27 @@ hr {
   width: 95%;
 }
 
-.experiencia h2, h3, h5, h6{
-  color: var(--negro);
+.experiencia h2{
+  color: var(--azul);
+}
+
+.experiencia h3, h6{
+  color: var(--blanco);
 }
 
 .experiencia h4{
   font-size: 2.4rem;
-  color: var(--azul);
+  color: var(--blanco);
 }
 
 .experiencia h5{
+  color: #AACBC4;
   font-size: 1.8rem;
 }
 
 .experiencia h6{
   font-size: 1.6rem;
-  color: var(--gris);
+  color: var(--blanco);
 }
 
 .experiencia_tarjetas--container{
@@ -383,15 +392,19 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  border: 1px solid #151515;
+  background-color: #092B2B;
   border-radius: 10px;
   padding: 40px;
   transition: all 300ms;
 }
 
+.tarjetas--content p{
+  color: var(--blanco);
+}
+
 .tarjetas--content:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(40, 58, 234, 0.8), 0 10px 10px rgba(40, 58, 234, 0.8);
+  box-shadow: 0 14px 28px rgba(44, 194, 149, 0.4), 0 10px 10px rgba(44, 194, 149, 0.4);
 }
 
 .tarjetas--content_titles{
@@ -425,10 +438,10 @@ hr {
 .habilidades{
   margin: 64px 0;
   padding: 73px 0;
-  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   gap: 56px;
+  background-color: #092A2A;
 }
 
 .habilidades_container{
@@ -440,8 +453,13 @@ hr {
   margin: 0 auto;
 }
 
+.habilidades_container p{
+  color: var(--blanco);
+}
+
 .habilidades--title{
   margin-bottom: 32px;
+  color: var(--rojo);
 }
 
 .habilidades_container--content{
@@ -454,13 +472,14 @@ hr {
   align-items: center;
   gap: 16px;
   padding: 16px 24px;
-  background-color: var(--azul-blanco);
+  background-color: var(--rojo);
   border-radius: 10px;
 }
 
 .habilidades--tools p{
   font-size: 1.6rem;
   font-weight: 700;
+  color: var(--negro);
 }
 
 .habilidades--tools img{
@@ -515,6 +534,10 @@ hr {
   gap: 56px;
 }
 
+.proyectos h2{
+  color: var(--rojo);
+}
+
 .proyectos_container{
   width: 100%;
   display: flex;
@@ -535,7 +558,7 @@ hr {
 
 .article-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(40, 58, 234, 0.8), 0 10px 10px rgba(40, 58, 234, 0.8);
+  box-shadow: 0 14px 28px rgba(44, 194, 149, 0.4), 0 10px 10px rgba(44, 194, 149, 0.4);
 }
 
 .article-card img {
@@ -598,7 +621,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--negro);
+  background-color: #092A2A;
   width: 100%;
   padding: 64px 0;
   gap: 48px;

@@ -11,16 +11,16 @@ html {
 }
 
 body {
-  background-color: var(--negro);
+  background-color: var(--neutro-oscuro);
 }
 
 :root {
   --blanco: #ffffff;
-  --negro: #030F0F;
-  --gris: #555555;
-  --azul-blanco: #DEE8FF;
-  --rojo: #00DF82;
-  --azul: #2CC295;
+  --neutro-oscuro: #030F0F;
+  --verde-principal: #00DF82;
+  --verde-secundario: #2CC295;
+  --verde-fondo: #092B2B;
+  --verde-blanco: #AACBC4;
 }
 
 h1 {
@@ -62,7 +62,7 @@ h6 {
 p {
   font-size: 2rem;
   font-weight: 400;
-  color: var(--gris);
+  color: var(--blanco);
 }
 
 @media only screen and (max-width: 768px){
@@ -86,7 +86,7 @@ p {
 /* header */
 
 .header {
-  background-color: #092A2A;
+  background-color: var(--verde-fondo);
   /* backdrop-filter: blur(80px); */
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
@@ -119,7 +119,7 @@ p {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  color: var(--rojo);
+  color: var(--verde-principal);
 }
 
 .header .logo {
@@ -150,7 +150,7 @@ p {
 }
 
 .header .menu-icon .navicon {
-  background: #ffffff;
+  background: var(--blanco);
   display: block;
   height: 2px;
   position: relative;
@@ -160,7 +160,7 @@ p {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #ffffff;
+  background: var(--blanco);
   content: '';
   display: block;
   height: 100%;
@@ -239,13 +239,13 @@ p {
   max-width: 1360px;
   margin: 0 auto;
   width: 95%;
-  padding: 40px;
-  /* background-color: var(--blanco); */
+  /* padding: 40px;
+  background-color: var(--blanco);
   border-radius: 50px;
-  /* background: url('../images/Cuadricula.svg'), var(--blanco); */
+  background: url('../images/Cuadricula.svg'), var(--blanco);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .foto{
@@ -254,7 +254,7 @@ p {
 }
 
 .about_me h1{
-  color: #AACBC4;
+  color: var(--verde-blanco);
 }
 
 #span--title{
@@ -262,18 +262,30 @@ p {
 }
 
 /* .about_me span{
-  background-color: var(--azul);
+  background-color: var(--verde-secundario);
   border-radius: 100px;
   padding: 8px 40px;
   white-space: nowrap;
 } */
 
 .about_me span{
-  color: var(--rojo);
+  background: linear-gradient(
+        to right,
+        #00df82 20%,
+        #00ff37 30%,
+        #00df82 70%,
+        #00ff37 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+
 }
 
 .about_me p{
-  max-width: 950px;
   color: var(--blanco);
 }
 
@@ -284,11 +296,32 @@ p {
   text-decoration: none;
   font-size: 2.4rem;
   font-weight: 700;
-  color: var(--negro);
+  color: var(--neutro-oscuro);
   padding: 16px 64px;
-  background-color: var(--rojo);
-  display: block;
   transition: all 300ms;
+  /* background-color: var(--verde-principal); */
+  background: linear-gradient(180deg, #00df82, #00ff37);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
 }
 
 .about_me a:hover {
@@ -305,7 +338,7 @@ p {
 hr {
   height: 4px;
   width: 80px;
-  background-color: var(--negro);
+  background-color: var(--neutro-oscuro);
 }
 
 @media only screen and (max-width: 430px){
@@ -319,7 +352,7 @@ hr {
   }
 
   .about_me__container{
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 25px;
     gap: 25px;
   }
@@ -360,7 +393,32 @@ hr {
 }
 
 .experiencia h2{
-  color: var(--azul);
+  /* background: -webkit-linear-gradient(#00df82, #00ff37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background: linear-gradient(
+        to right,
+        #00df82 20%,
+        #00ff37 30%,
+        #00df82 70%,
+        #00ff37 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 
 .experiencia h3, h6{
@@ -373,7 +431,7 @@ hr {
 }
 
 .experiencia h5{
-  color: #AACBC4;
+  color: var(--verde-blanco);;
   font-size: 1.8rem;
 }
 
@@ -392,7 +450,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  background-color: #092B2B;
+  background-color: var(--verde-fondo);
   border-radius: 10px;
   padding: 40px;
   transition: all 300ms;
@@ -441,7 +499,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 56px;
-  background-color: #092A2A;
+  background-color: var(--verde-fondo);
 }
 
 .habilidades_container{
@@ -459,7 +517,20 @@ hr {
 
 .habilidades--title{
   margin-bottom: 32px;
-  color: var(--rojo);
+  background: linear-gradient(
+        to right,
+        #00df82 20%,
+        #00ff37 30%,
+        #00df82 70%,
+        #00ff37 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+
 }
 
 .habilidades_container--content{
@@ -472,14 +543,14 @@ hr {
   align-items: center;
   gap: 16px;
   padding: 16px 24px;
-  background-color: var(--rojo);
+  background-color: var(--verde-principal);
   border-radius: 10px;
 }
 
 .habilidades--tools p{
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--negro);
+  color: var(--neutro-oscuro);
 }
 
 .habilidades--tools img{
@@ -535,7 +606,20 @@ hr {
 }
 
 .proyectos h2{
-  color: var(--rojo);
+  background: linear-gradient(
+        to right,
+        #00df82 20%,
+        #00ff37 30%,
+        #00df82 70%,
+        #00ff37 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+
 }
 
 .proyectos_container{
@@ -621,9 +705,9 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #092A2A;
+  background-color: var(--verde-fondo);
   width: 100%;
-  padding: 64px 0;
+  padding: 40px 0;
   gap: 48px;
   color: var(--blanco);
   border-radius: 50px 50px 0 0;
@@ -645,7 +729,7 @@ footer h6{
 @media only screen and (max-width: 430px){
   footer{
     width: 100%;
-    padding: 48px 0;
+    padding: 40px 0;
     gap: 24px;
     color: var(--blanco);
     border-radius: 50px 50px 0 0;

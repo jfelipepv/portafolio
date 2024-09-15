@@ -98,6 +98,7 @@ p {
 .header__container{
   max-width: 1360px;
   margin: 0 auto;
+  width: 92%;
 }
 
 .header ul {
@@ -109,7 +110,7 @@ p {
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 20px 30px;
   text-decoration: none;
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
@@ -126,7 +127,7 @@ p {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 0;
   text-decoration: none;
 }
 
@@ -227,7 +228,7 @@ p {
 
 .about_me{
   position: relative;
-  max-height: 900px;
+  /* max-height: 900px; */
   padding: 128px 0 64px 0;
 }
 
@@ -238,7 +239,7 @@ p {
   justify-content: center;
   max-width: 1360px;
   margin: 0 auto;
-  width: 95%;
+  width: 92%;
   /* padding: 40px;
   background-color: var(--blanco);
   border-radius: 50px;
@@ -389,7 +390,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 56px;
-  width: 95%;
+  width: 92%;
 }
 
 .experiencia h2{
@@ -506,7 +507,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 95%;
+  width: 92%;
   max-width: 1360px;
   margin: 0 auto;
 }
@@ -596,7 +597,7 @@ hr {
 
 .proyectos{
   max-width: 1360px;
-  width: 95%; 
+  width: 92%; 
   margin: 64px auto;
   padding-top: 73px;
   margin-top: -73px;
@@ -658,7 +659,7 @@ hr {
   padding: 30px 20px 20px 20px;
   height: auto;
   bottom: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
 }
 
 .article-card .date,
@@ -688,7 +689,7 @@ hr {
     gap: 20px;
   }
   .article-card{
-    width: 95vw;
+    width: 92vw;
   }
 }
 

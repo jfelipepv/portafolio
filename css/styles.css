@@ -429,6 +429,7 @@ hr {
 .experiencia h4{
   font-size: 2.4rem;
   color: var(--blanco);
+  width: 188px;
 }
 
 .experiencia h5{
@@ -444,27 +445,27 @@ hr {
 .experiencia_tarjetas--container{
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 
 .tarjetas--content{
   display: flex;
-  flex-direction: column;
   gap: 32px;
-  background-color: var(--verde-fondo);
-  border-radius: 10px;
+  /* background-color: var(--verde-fondo);
+  border-radius: 10px; */
+  border-top: 1px solid #ffffff;
   padding: 40px;
   transition: all 300ms;
 }
 
 .tarjetas--content p{
   color: var(--blanco);
+  width: 1080px;
 }
 
-.tarjetas--content:hover {
+/* .tarjetas--content:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(44, 194, 149, 0.4), 0 10px 10px rgba(44, 194, 149, 0.4);
-}
+} */
 
 .tarjetas--content_titles{
   display: flex;
@@ -485,8 +486,14 @@ hr {
   }
 
   .tarjetas--content{
+    flex-direction: column;
     padding: 24px;
   }
+
+  .tarjetas--content p{
+    width: 100%;
+  }
+
   .tarjetas--content_titles{
     gap: 8px;
   }
@@ -545,7 +552,7 @@ hr {
   gap: 8px;
   padding: 16px 16px;
   background-color: var(--verde-principal);
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .habilidades--tools p{
@@ -631,7 +638,7 @@ hr {
 .article-card {
   width: 380px;
   height: 280px;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -728,6 +735,11 @@ footer{
       -webkit-animation: AnimationName 10s ease infinite;
       -moz-animation: AnimationName 10s ease infinite;
       animation: AnimationName 10s ease infinite;
+}
+
+.footer-boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(44, 194, 149, 0.4), 0 10px 10px rgba(44, 194, 149, 0.4);
 }
 
 footer h6{

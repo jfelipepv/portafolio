@@ -199,7 +199,7 @@ body.menu-open {
 .about_me{
   position: relative;
   /* max-height: 900px; */
-  padding: 128px 0 64px 0;
+  padding: 96px 0 64px 0;
 }
 
 .about_me__container{
@@ -221,7 +221,6 @@ body.menu-open {
 
 .foto{
   width: 140px;
-  clip-path: circle(40% at 50% 50%);
 }
 
 .about_me h1{

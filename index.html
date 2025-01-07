@@ -15,20 +15,23 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
-
-            <a href="/" class="logo"><img src="./images/favicon.svg" alt=""></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a  href="#experiencia_laboral">Experiencia laboral</a></li>
-                <li><a href="#habilidades">Mis habilidades</a></li>
-                <!-- <li><a href="#careers">Educación</a></li> -->
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
+        <a href="./"><div class="logo">jfelipepv</div></a>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="#experiencia_laboral">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <!-- <li><a href="#education">Educación</a></li> -->
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <button class="hamburger" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
       </header>
+
     <main>
         <div class="about_me">
             <div class="about_me__container">
@@ -96,6 +99,19 @@
                 </div>
             </div>
             <div class="habilidades_container">
+                <h6>Habilidades analíticas:</h6>
+                <div class="habilidades_container--content">
+                    <div class="habilidades--tools">
+                        <img src="./images/hotjar logo.svg" alt="">
+                        <p>Hotjar</p>
+                    </div>
+                    <div class="habilidades--tools">
+                        <img src="./images/analytics logo.svg" alt="">
+                        <p>Google Analytics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="habilidades_container">
                 <h6>Habilidades de desarrollo:</h6>
                 <div class="habilidades_container--content">
                     <div class="habilidades--tools">
@@ -117,19 +133,6 @@
                 </div>
             </div>
             <div class="habilidades_container">
-                <h6>Habilidades adicionales:</h6>
-                <div class="habilidades_container--content">
-                    <div class="habilidades--tools">
-                        <img src="./images/adobe-premier logo.svg" alt="">
-                        <p>Premiere</p>
-                    </div>
-                    <div class="habilidades--tools">
-                        <img src="./images/adobe-after logo.svg" alt="">
-                        <p>After Effects</p>
-                    </div>
-                </div>
-            </div>
-            <div class="habilidades_container">
                 <h6>Habilidades de diseño:</h6>
                 <p>Principios de diseño • Ideación • Diseño UX/UI • Creatividad • Estrategia • Tecnología</p>
             </div>
@@ -138,6 +141,37 @@
                 <p>Adaptación al cambio • Trabajo en equipo • Relaciones interpersonales • Dinámico • Habilidades de comunicación • Gestión del tiempo</p>
             </div>
         </div>
+
+        <!-- <div id="education" class="education">
+            <h2>Educación y cursos</h2>
+            <div class="education_tarjetas--container">
+                <div class="education_tarjetas--content">
+                    <div class="education_tarjetas--content_img"><img src="./images/Copia Electrónica Auténtica - Juan Felipe Peña Vacilescu_page-0001.jpg" alt=""></div>
+                    <div class="education_tarjetas--content_titles">
+                        <h4>Ingeniería multimedia</h4>
+                        <h5>Universidad Autónoma de Occidente</h5>
+                        <h6>2017 - 2023</h6>
+                    </div>
+                </div>
+                <div class="education_tarjetas--content">
+                    <img src="./images/diploma-figma-tecnicas-avanzadas_page-0001.jpg" alt="">
+                    <div class="education_tarjetas--content_titles">
+                        <h4>
+                            Curso de Figma: Técnicas Avanzadas de Diseño</h4>
+                        <h5>Platzi</h5>
+                        <h6>2024</h6>
+                    </div>
+                </div>
+                <div class="education_tarjetas--content">
+                    <img src="./images/diploma-ux-testing_page-0001.jpg" alt="">
+                    <div class="education_tarjetas--content_titles">
+                        <h4>Curso de CX Research y UX Testing</h4>
+                        <h5>Platzi</h5>
+                        <h6>2024</h6>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
         <div id="proyectos" class="proyectos">
             <h2>Mis proyectos destacados</h2>

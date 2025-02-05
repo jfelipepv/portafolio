@@ -207,7 +207,7 @@ body.menu-open {
   gap: 32px;
   flex-direction: column;
   justify-content: center;
-  max-width: 1360px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 92%;
   /* padding: 40px;
@@ -353,7 +353,7 @@ hr {
 /* experiencia */
 
 .experiencia{
-  max-width: 1360px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 70px;
   display: flex;
@@ -484,7 +484,7 @@ hr {
   flex-direction: column;
   gap: 24px;
   width: 92%;
-  max-width: 1360px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -531,7 +531,7 @@ hr {
 }
 
 .habilidades--tools img{
-  width: 32px;
+  width: 28px;
 }
 
 @media only screen and (max-width: 450px){
@@ -556,7 +556,7 @@ hr {
     font-weight: 700;
   }
   .habilidades--tools img{
-    width: 40px;
+    width: 28px;
   }
 }
 
@@ -568,21 +568,20 @@ hr {
 
 /* Educación */
 
-.education{
-  max-width: 1360px;
-  margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 64px;
+.certificates-section {
+  max-width: 1200px;
+  width: 92%; 
+  margin: 64px auto;
+  padding-top: 73px;
+  margin-top: -73px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
-  width: 92%;
 }
 
-.education h2{
-  /* background: -webkit-linear-gradient(#00df82, #00ff37);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+.certificates-section h2 {
+  text-align: center;
   background: linear-gradient(
         to right,
         #00df82 20%,
@@ -596,66 +595,92 @@ hr {
     text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 5s ease-in-out infinite alternate;
-
 }
 
-@keyframes textShine {
-  0% {
-      background-position: 0% 50%;
-  }
-  100% {
-      background-position: 100% 50%;
-  }
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
-.education h3, h6{
-  color: var(--blanco);
-}
-
-.education h4{
-  font-size: 2.4rem;
-  color: var(--blanco);
-}
-
-.education h5{
-  color: var(--verde-blanco);;
-  font-size: 1.8rem;
-}
-
-.education h6{
-  font-size: 1.6rem;
-  color: var(--blanco);
-}
-
-.education_tarjetas--container{
-  display: flex;
-  gap: 20px;
-}
-
-.education_tarjetas--content{
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.certificate-card {
   padding: 16px;
-  border-radius: 12px;
   border: 1px solid var(--blanco);
+  border-radius: 12px;
+  overflow: hidden;
+/*   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.education_tarjetas--content_img{
-  width: 320px;
-  height: 240px;
-  object-fit: cover;
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.education_tarjetas--content img{
+.certificate-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-.education_tarjetas--content_titles{
+.certificate-card .card-content {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
+}
+
+.certificate-card h6 {
+  color: var(--blanco);
+  font-size: 2.4rem;
+}
+
+.certificate-card p {
+  color: var(--blanco);
+}
+
+.certificate-card .year {
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+.certificates-section a{
+  width: 360px;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--neutro-oscuro);
+  padding: 16px 64px;
+  transition: all 300ms;
+  /* background-color: var(--verde-principal); */
+  background: linear-gradient(180deg, #00df82, #00ff37);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
+.certificates-section a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(44, 194, 149, 0.4), 0 10px 10px rgba(44, 194, 149, 0.4);
 }
 
 /* Educación */
@@ -663,7 +688,7 @@ hr {
 /* Proyectos */
 
 .proyectos{
-  max-width: 1360px;
+  max-width: 1200px;
   width: 92%; 
   margin: 64px auto;
   padding-top: 73px;
@@ -699,11 +724,11 @@ hr {
 }
 
 .article-card {
-  height: 480px;
+  height: 460px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.5);
   transition: all 300ms;
 }
 
@@ -725,7 +750,8 @@ hr {
   padding: 30px 20px 20px 20px;
   height: auto;
   bottom: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  /* background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.9)); */
+  background: linear-gradient(rgba(9, 43, 43, 0.8), rgba(9, 43, 43, 1));
 }
 
 .article-card .date,
@@ -734,13 +760,13 @@ hr {
 }
 
 .article-card .date {
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 4px;
 }
 
 .article-card .title {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--blanco);
 }
 
@@ -825,4 +851,16 @@ footer h6{
   .footer-boton{
     font-size: 1.6rem;
   }
+}
+
+/* Animación de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

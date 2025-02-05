@@ -87,6 +87,15 @@ p {
 
 .header {
   background-color: var(--verde-fondo);
+  width: 100%; /* El fondo ocupa todo el ancho de la pantalla */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrado horizontal */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,7 +170,7 @@ p {
 
 /* Responsive */
 @media only screen and (max-width: 450px){
-  .header{
+  .header-container{
     padding: 20px 16px;
   }
 }
@@ -198,7 +207,6 @@ body.menu-open {
 
 .about_me{
   position: relative;
-  /* max-height: 900px; */
   padding: 96px 0 64px 0;
 }
 
@@ -324,8 +332,6 @@ hr {
 .tarjetas--content{
   display: flex;
   gap: 32px;
-  /* background-color: var(--verde-fondo);
-  border-radius: 10px; */
   border-top: 1px solid #ffffff;
   padding: 40px;
   transition: all 300ms;
@@ -335,11 +341,6 @@ hr {
   color: var(--blanco);
   width: 1080px;
 }
-
-/* .tarjetas--content:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(44, 194, 149, 0.4), 0 10px 10px rgba(44, 194, 149, 0.4);
-} */
 
 .tarjetas--content_titles{
   display: flex;
@@ -517,8 +518,6 @@ hr {
   font-weight: bold;
   color: var(--blanco);
 }
-
-/* Educación */
 
 /* Proyectos */
 

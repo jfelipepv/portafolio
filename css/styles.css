@@ -208,7 +208,7 @@ body.menu-open {
 
 .about_me{
   position: relative;
-  padding: 96px 0 64px 0;
+  padding: 128px 0 64px 0;
 }
 
 .about_me__container{
@@ -239,8 +239,6 @@ body.menu-open {
 #span--title{
   color: var(--blanco);
 }
-
-
 
 .about_me p{
   color: var(--blanco);
@@ -405,7 +403,7 @@ hr {
 
 .habilidades_container--content{
   display: flex;
-  gap: 16px;
+  gap: 12px;
 }
 
 .habilidades--tools{
@@ -442,7 +440,6 @@ hr {
   }
   .habilidades_container--content{
     flex-wrap: wrap;
-    gap: 16px;
   }
   .habilidades--tools p{
     font-size: 1.6rem;

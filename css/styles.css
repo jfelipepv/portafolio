@@ -303,6 +303,10 @@ hr {
   width: 92%;
 }
 
+.experiencia h2{
+  color: var(--verde-blanco);
+}
+
 .experiencia h3, h6{
   color: var(--blanco);
 }
@@ -387,18 +391,19 @@ hr {
 .habilidades_container{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   width: 92%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.habilidades_container p{
+.habilidades_container h2{
   color: var(--blanco);
+  padding-bottom: 28px;
 }
 
-.habilidades--title{
-  margin-bottom: 32px;
+.habilidades_container p{
+  color: var(--blanco);
 }
 
 .habilidades_container--content{
@@ -435,9 +440,6 @@ hr {
   .habilidades_container{
     gap: 16px;
   }
-  .habilidades--title{
-    margin-bottom: 24px;
-  }
   .habilidades_container--content{
     flex-wrap: wrap;
   }
@@ -469,6 +471,7 @@ hr {
 
 .certificates-section h2 {
   text-align: center;
+  color: var(--verde-blanco);
 }
 
 .certificates-grid {
@@ -618,6 +621,7 @@ hr {
 
 .proyectos h2{
   text-align: center;
+  color: var(--verde-blanco);
 }
 
 .proyectos_container{

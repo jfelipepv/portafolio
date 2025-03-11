@@ -318,7 +318,7 @@ hr {
 }
 
 .experiencia h5{
-  color: var(--verde-blanco);;
+  color: var(--verde-blanco);
   font-size: 1.8rem;
 }
 
@@ -482,7 +482,8 @@ hr {
 
 .certificate-card {
   padding: 16px;
-  border: 1px solid var(--blanco);
+  background-color: rgba(255, 255, 255, 0.08);
+  /* border: 1px solid var(--blanco); */
   border-radius: 12px;
   overflow: hidden;
 /*   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -511,8 +512,8 @@ hr {
   font-size: 2.4rem;
 }
 
-.certificate-card p {
-  color: var(--blanco);
+.institution {
+  color: var(--verde-blanco);
 }
 
 .certificate-card .year {

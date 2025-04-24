@@ -272,6 +272,10 @@ hr {
     gap: 25px;
   }
 
+  .about_me__container h1{
+    width: 328px;
+  }
+
   .about_me--nombre{
     display: flex;
     flex-wrap: wrap;
@@ -357,6 +361,10 @@ hr {
     padding-top: 73px;
     margin-top: -73px;
     gap: 40px;
+  }
+
+  .experiencia h4{
+    width: 100%;
   }
 
   .experiencia_tarjetas--container{

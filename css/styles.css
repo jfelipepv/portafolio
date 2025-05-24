@@ -683,15 +683,16 @@ footer{
     border-radius: 50px 50px 0 0;
   }
   .contacto-container__1 h2{
-  font-size: 4rem;
+    font-size: 4rem;
+    text-align: center;
   }
   .contacto-container{
-  flex-direction: column;
-  gap: 48px;
-  align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
   }
   .contacto-container__1, .contacto-container__2{
-  align-items: center;
+    align-items: center;
   }
 }
 

@@ -1,13 +1,20 @@
-<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="56" height="56" rx="28" fill="#E34F26"/>
-<g clip-path="url(#clip0_317_84)">
-<path d="M18.0096 39.067L16 14.0468L40 14.0971L37.875 39.067L28.0906 41.9532L18.0096 39.067Z" fill="#E34F26"/>
-<path d="M28.0906 39.5369V16.4296L37.9739 16.4631L36.2115 37.1371L28.0906 39.5369Z" fill="#EF652A"/>
-<path d="M35.2562 22.2023L35.5361 19.1481H20.3323L21.1723 28.5119H31.6651L31.2536 32.5056L27.8932 33.4284L24.4835 32.4216L24.3023 30.0388H21.2876L21.6995 34.9052L27.893 36.6672L34.136 34.9052L34.976 25.4074H23.9563L23.6433 22.2023H35.2562Z" fill="white"/>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="39" height="39" rx="3.5" fill="#061B13"/>
+<rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#373D3D"/>
+<g clip-path="url(#clip0_545_329)">
+<path d="M32 20C32 13.3726 26.6274 8 20 8C13.3726 8 8 13.3726 8 20C8 26.6274 13.3726 32 20 32C26.6274 32 32 26.6274 32 20Z" fill="#E34F26"/>
+<mask id="mask0_545_329" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="14" y="14" width="12" height="12">
+<path d="M25.1429 14H14.8571V26H25.1429V14Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_545_329)">
+<path d="M15.7184 24.743L14.8571 14.0201L25.1429 14.0416L24.2321 24.743L20.0388 25.9799L15.7184 24.743Z" fill="#E34F26"/>
+<path d="M20.0388 24.9444V15.0413L24.2745 15.0556L23.5192 23.9159L20.0388 24.9444Z" fill="#EF652A"/>
+<path d="M23.1098 17.5153L23.2298 16.2063H16.7138L17.0738 20.2194H21.5708L21.3944 21.931L19.9542 22.3265L18.4929 21.895L18.4153 20.8738H17.1233L17.2998 22.9594L19.9541 23.7145L22.6297 22.9594L22.9897 18.8889H18.267L18.1328 17.5153H23.1098Z" fill="white"/>
+</g>
 </g>
 <defs>
-<clipPath id="clip0_317_84">
-<rect width="24" height="28" fill="white" transform="translate(16 14)"/>
+<clipPath id="clip0_545_329">
+<rect width="24" height="24" fill="white" transform="translate(8 8)"/>
 </clipPath>
 </defs>
 </svg>

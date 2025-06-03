@@ -485,7 +485,11 @@ body.menu-open {
   width: 92%;
 }
 
-.certificates-grid {
+.certificates-carousel {
+  width: 100%;
+}
+
+.carousel-track {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.6rem;
@@ -513,36 +517,73 @@ body.menu-open {
   height: auto;
 }
 
-.certificate-card .card-content {
+.card-content {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.certificate-card h6 {
+.card-content h6 {
   font-size: 2.4rem;
   font-weight: 700;
 }
 
-.certificate-card p {
+.card-content p {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--primary-green-500);
 }
 
-.certificate-card .year {
+.card-content .year {
   font-size: 1.2rem;
   color: var(--black-50);
 }
 
-@media only screen and (max-width: 450px){
+.carousel-dots {
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--black-50);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--primary-green-500);
+}
+
+@media only screen and (max-width: 1024px) {
+  .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 8px;
+    scroll-behavior: smooth;
+  }
+
+  .certificate-card {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .carousel-dots {
+    display: flex;
+  }
+
   .certificates-section {
     padding: 80px 16px;
-    /* padding-top: 73px; */
-    /* margin-top: -73px; */
     gap: 40px;
-    margin: 0;
     width: 100%;
   }
 }

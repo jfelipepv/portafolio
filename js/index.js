@@ -47,3 +47,34 @@ const observer = new IntersectionObserver(
 
 // Observa cada elemento
 elements.forEach(el => observer.observe(el));
+
+
+const track = document.querySelector('.carousel-track');
+  const dots = document.querySelectorAll('.dot');
+  const cards = document.querySelectorAll('.certificate-card');
+
+  function setActiveDot(index) {
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[index]) dots[index].classList.add('active');
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const index = parseInt(dot.getAttribute('data-index'));
+      const scrollX = cards[index].offsetLeft - track.offsetLeft;
+      track.scrollTo({ left: scrollX, behavior: 'smooth' });
+      setActiveDot(index);
+    });
+  });
+
+  track.addEventListener('scroll', () => {
+    const scrollLeft = track.scrollLeft;
+    let activeIndex = 0;
+    cards.forEach((card, index) => {
+      const cardLeft = card.offsetLeft - track.offsetLeft;
+      if (cardLeft - scrollLeft < card.offsetWidth / 2) {
+        activeIndex = index;
+      }
+    });
+    setActiveDot(activeIndex);
+  });

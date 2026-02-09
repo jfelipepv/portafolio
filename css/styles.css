@@ -439,19 +439,20 @@ body.menu-open {
 
 .habilidades_container--content{
   display: flex;
-  gap: 40px 80px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .habilidades--tools{
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 174px;
 }
 
 .habilidades--tools p{
   font-size: 1.6em;
   color: var(--black-50);
-  width: 174px;
 }
 
 .habilidades--tools img{
@@ -469,13 +470,12 @@ body.menu-open {
   }
   .habilidades_container--content{
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px 20px;
   }
   .habilidades--tools{
     width: 29%;
   }
   .habilidades--tools p{
-    width: 100%;
     font-size: 1.4em;
   }
 }

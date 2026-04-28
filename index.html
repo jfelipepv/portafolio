@@ -1,375 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Juan Felipe Peña — UX/UI Designer</title>
+  <meta name="description" content="Multimedia engineer and UX/UI designer based in Cali, Colombia. I shape digital experiences that merge creativity with functionality." />
+  <meta name="author" content="Juan Felipe Peña Vacilescu" />
+  <meta name="keywords" content="UX Designer, UI Designer, Web Designer, Multimedia Engineer, Cali, Colombia, Portfolio, Juan Felipe Peña" />
+
+  <link rel="canonical" href="https://jfelipepv.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jfelipepv.com/" />
+  <meta property="og:title" content="Juan Felipe Peña — UX/UI Designer" />
+  <meta property="og:description" content="Multimedia engineer and UX/UI designer based in Cali, Colombia. I shape digital experiences that merge creativity with functionality." />
+  <meta property="og:image" content="https://jfelipepv.com/images/og-cover.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Juan Felipe Peña — UX/UI Designer" />
+  <meta name="twitter:description" content="Multimedia engineer and UX/UI designer based in Cali, Colombia." />
+  <meta name="twitter:image" content="https://jfelipepv.com/images/og-cover.jpg" />
+
+  <meta name="theme-color" content="#F5F5F2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#050C0D" media="(prefers-color-scheme: dark)" />
+
+  <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    
-    <header class="header">
-        <div class="header-container">
-            <a href="./"><div class="logo">jfelipepv</div></a>
-            <nav class="nav">
-              <ul class="nav-links">
-                <li><a href="#experiencia_laboral">Experience,</a></li>
-                <li><a href="#habilidades">Skills,</a></li>
-                <li><a href="#educacion">Education,</a></li>
-                <li><a href="#proyectos">Projects,</a></li>
-                <li><a href="#contacto">Contact.</a></li>
-              </ul>
-              <button class="hamburger" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </nav>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__logo">jfelipepv</a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="#work" data-index="01">Work</a></li>
+          <li><a href="#about" data-index="02">About</a></li>
+          <li><a href="#contact" data-index="03">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="theme-toggle" aria-label="Toggle theme" type="button">
+          <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+          <span class="theme-toggle__label">Light</span>
+        </button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="hero__inner">
+        <p class="hero__role">UX/UI Designer | No-Code Developer</p>
+
+        <h1 class="hero__title">
+          Juan Felipe
+          <span class="hero__title-sub">Peña Vacilescu</span>
+        </h1>
+
+        <p class="hero__bio">
+          Multimedia engineer passionate about user experience, interface design and graphic design. I focus on shaping digital experiences that merge creativity with functionality.
+        </p>
+
+        <div class="hero__meta">
+          <div class="hero__status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for work</span>
           </div>
-    </header>
-
-    <main>
-        <div class="about_me fade-in">
-            <div class="about_me__container">
-                <img class="foto fade-in" src="./images/foto perfil.png" alt="">
-                <h1 class="fade-in">Hi! I'm Juan Felipe, <span class="animation-title">a UX/UI designer.</span></h1>
-                <p class="fade-in">I'm a multimedia engineer passionate with a solid approach in user experience (UX), user interface design (UI) and graphic design. My professional path has been centered on making shocking digital experiences and attractive ones that merge the creativity with the functionality. With a solid formation and practical experience in these areas, I have contributed to the success of various projects and work teams.</p>
-                <a class="button fade-in" href="./docs/Juan_Felipe_Pena_CV.pdf" download="Juan_Felipe_Pena_CV.pdf">Download CV</a>
-            </div>
+          <span class="hero__location">Cali, Colombia</span>
         </div>
 
-        <div class="slider-container">
-            <div class="slider-track">
-                <span>UX/UI Design</span>
-                <span>•</span>
-                <span>Accessibility</span>
-                <span>•</span>
-                <span>Wireframes</span>
-                <span>•</span>
-                <span>UX Research</span>
-                <span>•</span>
-                <span>User Experience</span>
-                <span>•</span>
-                <span>Interface Design</span>
-                <span>•</span>
-                <span>Usability</span>
-                <span>•</span>
-                <span>UX/UI Design</span>
-                <span>•</span>
-                <span>Accessibility</span>
-                <span>•</span>
-                <span>Wireframes</span>
-                <span>•</span>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="./docs/Juan_Felipe_Pena_CV.pdf" download="Juan_Felipe_Pena_CV.pdf">Download CV</a>
+          <a class="btn btn--ghost" href="#work">View work</a>
+        </div>
 
-                <!-- Segunda copia para efecto continuo -->
-                <span>UX/UI Design</span>
-                <span>•</span>
-                <span>Accessibility</span>
-                <span>•</span>
-                <span>Wireframes</span>
-                <span>•</span>
-                <span>UX Research</span>
-                <span>•</span>
-                <span>User Experience</span>
-                <span>•</span>
-                <span>Interface Design</span>
-                <span>•</span>
-                <span>Usability</span>
-                <span>•</span>
-                <span>UX/UI Design</span>
-                <span>•</span>
-                <span>Accessibility</span>
-                <span>•</span>
-                <span>Wireframes</span>
-                <span>•</span>
+        <p class="hero__scroll" aria-hidden="true">Scroll</p>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>UX/UI Design</span><span class="marquee__dot">●</span>
+        <span>Accessibility</span><span class="marquee__dot">●</span>
+        <span>Wireframes</span><span class="marquee__dot">●</span>
+        <span>UX Research</span><span class="marquee__dot">●</span>
+        <span>User Experience</span><span class="marquee__dot">●</span>
+        <span>Interface Design</span><span class="marquee__dot">●</span>
+        <span>Usability</span><span class="marquee__dot">●</span>
+        <span>Responsive Design</span><span class="marquee__dot">●</span>
+        <span>Design Systems</span><span class="marquee__dot">●</span>
+        <span>Good Vibes</span><span class="marquee__dot">●</span>
+
+        <!-- Duplicado para loop infinito -->
+        <span>UX/UI Design</span><span class="marquee__dot">●</span>
+        <span>Accessibility</span><span class="marquee__dot">●</span>
+        <span>Wireframes</span><span class="marquee__dot">●</span>
+        <span>UX Research</span><span class="marquee__dot">●</span>
+        <span>User Experience</span><span class="marquee__dot">●</span>
+        <span>Interface Design</span><span class="marquee__dot">●</span>
+        <span>Usability</span><span class="marquee__dot">●</span>
+        <span>Responsive Design</span><span class="marquee__dot">●</span>
+        <span>Design Systems</span><span class="marquee__dot">●</span>
+        <span>Good Vibes</span><span class="marquee__dot">●</span>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="work">
+      <header class="section-header">
+        <span class="section-header__eyebrow">Selected projects</span>
+        <h2 class="section-header__title">Work</h2>
+      </header>
+
+      <div class="work__grid">
+
+        <a class="work-card" href="https://www.behance.net/gallery/237589807/estrellas-app-Website" target="_blank" rel="noopener">
+          <div class="work-card__media">
+            <img src="./images/Portada-estrellas.png" alt="estrellas app website cover" loading="lazy" />
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__index">01</span>
+            <h3 class="work-card__title">estrellas app — Website</h3>
+            <p class="work-card__desc">UX/UI design and visual direction for a music platform website connecting fans with their favorite artists.</p>
+            <div class="work-card__tags">
+              <span>UX/UI</span>
+              <span>Web Design</span>
+              <span>Case study</span>
             </div>
           </div>
+        </a>
 
-        <div id="experiencia_laboral" class="experiencia fade-in">
-            <div class="content--title">
-                <span>[Work experience]</span>
-                <h2>A tour of my career</h2>
+        <a class="work-card" href="https://www.behance.net/gallery/236279835/Chatea-Pro-Landing-page" target="_blank" rel="noopener">
+          <div class="work-card__media">
+            <img src="./images/Portada-chateapro.png" alt="Chatea Pro landing page cover" loading="lazy" />
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__index">02</span>
+            <h3 class="work-card__title">Chatea Pro — Landing page</h3>
+            <p class="work-card__desc">Landing page design focused on conversion and clarity for a SaaS communication platform.</p>
+            <div class="work-card__tags">
+              <span>Landing</span>
+              <span>UI Design</span>
+              <span>Case study</span>
             </div>
-            <div class="experiencia_tarjetas--container">
-                <div class="tarjetas--content fade-in">
-                    <div class="tarjetas--content_titles">
-                        <h6>Dropi</h6>
-                        <h4>Webmaster</h4>
-                        <p>May 2025 - Present</p>
-                    </div>
-                    <p>Responsible for designing and developing innovative and effective digital experiences, creating intuitive and attractive user interfaces that enhance user interaction and satisfaction. I focus on building and maintaining websites and digital platforms that align with the company's objectives, ensuring an optimal user experience and smooth navigation.</p>
-                </div>
-                <div class="tarjetas--content fade-in">
-                    <div class="tarjetas--content_titles">
-                        <h6>Partner Comunicación</h6>
-                        <h4>Web Designer</h4>
-                        <p>Nov 2023 - May 2025</p>
-                    </div>
-                    <p>I transform ideas into impactful digital experiences, working closely with clients to create visually appealing and functional websites, optimized for mobile devices and aligned with their business goals.</p>
-                </div>
-                <div class="tarjetas--content fade-in">
-                    <div class="tarjetas--content_titles">
-                        <h6>Orión Estudio</h6>
-                        <h4>Junior Web Designer</h4>
-                        <p>Feb 2023 - Oct 2023</p>                       
-                    </div>
-                    <p>Supported the design and development of websites, as well as the creation of content calendars. Conducted research on trends and innovations in marketing, advertising, and web development to generate strategic ideas and contribute to internal initiatives.</p>
-                </div>
-                <div class="tarjetas--content fade-in">
-                    <div class="tarjetas--content_titles">
-                        <h6>Acsendo</h6>
-                        <h4>Designer</h4>
-                        <p>Jul 2022 - Dec 2022</p> 
-                    </div>
-                    <p>Assisted in the design and production of graphic materials for Acsendo’s communications, actively contributing to the company’s branding and positioning with current clients, potential leads, and internal stakeholders.</p>
-                </div>
+          </div>
+        </a>
+
+        <a class="work-card" href="https://www.behance.net/gallery/227227701/Hunter-Platform-User-Certificate-Flow-Design" target="_blank" rel="noopener">
+          <div class="work-card__media">
+            <img src="./images/Portada-Hunter.jpg" alt="Hunter Platform cover" loading="lazy" />
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__index">03</span>
+            <h3 class="work-card__title">Hunter Platform — User & Certificate Flow</h3>
+            <p class="work-card__desc">User flow and certificate generation design for an internal platform, focused on simplifying complex processes.</p>
+            <div class="work-card__tags">
+              <span>UX Flow</span>
+              <span>Platform</span>
+              <span>Case study</span>
             </div>
+          </div>
+        </a>
+
+        <a class="work-card" href="https://www.behance.net/gallery/219436901/Canola-Life-Website-redesign" target="_blank" rel="noopener">
+          <div class="work-card__media">
+            <img src="./images/Portada-Canola-Life.jpg" alt="Canola Life website redesign cover" loading="lazy" />
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__index">04</span>
+            <h3 class="work-card__title">Canola Life — Website redesign</h3>
+            <p class="work-card__desc">Full website redesign for a wellness brand, refreshing the visual language and improving the browsing experience.</p>
+            <div class="work-card__tags">
+              <span>Redesign</span>
+              <span>Web Design</span>
+              <span>Case study</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <header class="section-header">
+        <span class="section-header__eyebrow">My story</span>
+        <h2 class="section-header__title">About</h2>
+      </header>
+
+      <div class="about__intro">
+        <p><strong>Multimedia engineer</strong> with a solid approach in user experience, interface design and graphic design. I've contributed to projects across web design, branding and digital products.</p>
+        <p><strong>My process is research-first.</strong> I want to understand how people actually use a product before opening Figma — and I care about both the visual craft and the systems behind it.</p>
+        <p><strong>I work across the full design scope</strong>, from research and ideation to UI design and handoff. I enjoy teams where ideas get challenged and decisions are made together.</p>
+        <a class="btn btn--primary" href="./docs/Juan_Felipe_Pena_CV.pdf" download="Juan_Felipe_Pena_CV.pdf">View CV</a>
+      </div>
+
+      <div class="about__columns">
+
+        <!-- Experience -->
+        <div class="about__column">
+          <h3 class="about__column-title">Experience</h3>
+          <ul class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <span class="timeline__company">Dropi</span>
+                <span class="timeline__date">may. 2025 — Now</span>
+              </div>
+              <span class="timeline__role">Webmaster</span>
+              <p class="timeline__desc">Leading the design and development of digital experiences across the company's web ecosystem. I work on building and maintaining websites and platforms that align with business objectives, focusing on usability, smooth navigation and visual consistency. My role bridges design decisions with implementation, ensuring every interface reflects the brand and serves the user.</p>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <span class="timeline__company">Partner Comunicación</span>
+                <span class="timeline__date">nov. 2023 - may. 2025</span>
+              </div>
+              <span class="timeline__role">Web Designer</span>
+              <p class="timeline__desc">Translated client briefs into impactful digital experiences. Worked closely with stakeholders to design visually engaging websites optimized for mobile, balancing creative direction with conversion goals. I was involved end-to-end — from understanding the client's brand and audience, to wireframing, UI design, and collaborating with developers through handoff.</p>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <span class="timeline__company">Orión Estudio</span>
+                <span class="timeline__date">feb. 2023 - oct. 2023</span>
+              </div>
+              <span class="timeline__role">Junior Web Designer</span>
+              <p class="timeline__desc">Supported the studio's design and web development efforts, contributing to client projects and content calendars. I conducted ongoing research on trends in marketing, advertising and web design to fuel internal ideation and creative strategy. This role gave me my first exposure to working with real clients and shipping live websites.</p>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__head">
+                <span class="timeline__company">Acsendo</span>
+                <span class="timeline__date">jul. 2022 - dic. 2022</span>
+              </div>
+              <span class="timeline__role">Designer</span>
+              <p class="timeline__desc">Designed and produced graphic materials supporting Acsendo's communications strategy. Contributed to the company's branding across multiple touchpoints — from materials aimed at current clients and potential leads, to internal stakeholder communications. Focused on maintaining visual consistency while adapting tone for each audience.</p>
+            </li>
+          </ul>
         </div>
 
-        <div id="habilidades" class="habilidades fade-in">
-            <div class="content--title">
-                <span>[My skills]</span>
-                <h2>My technical and creative strengths</h2>
-            </div>
-            <div class="habilidades-grid">
-                <div class="habilidades_container">
-                <h6>UX/UI and graphic tools:</h6>
-                <div class="habilidades_container--content">
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/figma logo.svg" alt="">
-                        <p>Figma</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/adobe-illustrator logo.svg" alt="">
-                        <p>Illustrator</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/adobe-photoshop logo.svg" alt="">
-                        <p>Photoshop</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/hotjar logo.svg" alt="">
-                        <p>Hotjar</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/analytics logo.svg" alt="">
-                        <p>Google Analytics</p>
-                    </div>
-                </div>
-            </div>
-            <div class="habilidades_container">
-                <h6>Development skills:</h6>
-                <div class="habilidades_container--content">
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/html logo.svg" alt="">
-                        <p>HTML</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/css logo.svg" alt="">
-                        <p>CSS</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/js logo.svg" alt="">
-                        <p>Basic JavaScript</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/elementor logo.svg" alt="">
-                        <p>Elementor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="habilidades_container fade-in">
-                <h6>Design skills:</h6>
-                <div class="habilidades_container--content">
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/pencil-alt.svg" alt="">
-                        <p>Design Principles</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/lightbulb.svg" alt="">
-                        <p>Ideation</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/desktop.svg" alt="">
-                        <p>User Interface</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/mobile.svg" alt="">
-                        <p>Responsive Design</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/search.svg" alt="">
-                        <p>Research and Strategy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="habilidades_container fade-in">
-                <h6>Soft skills:</h6>
-                <div class="habilidades_container--content">
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/exchange-alt.svg" alt="">
-                        <p>Adaptation to change</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/users.svg" alt="">
-                        <p>Teamwork</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/check-square.svg" alt="">
-                        <p>Dynamic</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/comments.svg" alt="">
-                        <p>Team talk</p>
-                    </div>
-                    <div class="habilidades--tools fade-in">
-                        <img src="./images/clock.svg" alt="">
-                        <p>Time management</p>
-                    </div>
-                </div>
-            </div>
-            </div>
+        <!-- Skills -->
+        <div class="about__column">
+          <h3 class="about__column-title">Skills</h3>
+          <ul class="skill-tags">
+            <li>UX Research + Design Strategy</li>
+              <li>UI Design</li>
+              <li>Design Systems</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>User Flows</li>
+              <li>Accessibility</li>
+              <li>Responsive Design</li>
+              <li>Figma</li>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Basic JavaScript</li>
+              <li>WordPress</li>
+              <li>Elementor</li>
+              <li>SEO</li>
+              <li>Hotjar</li>
+              <li>Google Analytics</li>
+          </ul>
         </div>
 
-        <section id="educacion" class="certificates-section fade-in">
-            <div class="content--title">
-                <span>[Education and courses]</span>
-                <h2>Studies that have shaped my vision</h2>
-            </div>
+      </div>
+    </section>
 
-            <div class="certificates-carousel">
-                <div class="carousel-track">
-                <div class="certificate-card">
-                    <img src="./images/Copia Electrónica Auténtica - Juan Felipe Peña Vacilescu_page-0001.jpg" alt="Certificado 1">
-                    <div class="card-content">
-                    <p>Universidad Autónoma de Occidente</p>
-                    <h6>Ingeniería multimedia</h6>
-                    <p class="year">2017-2023</p>
-                    </div>
-                </div>
+  </main>
 
-                <div class="certificate-card">
-                    <img src="./images/diploma-figma-tecnicas-avanzadas_page-0001.jpg" alt="Certificado 2">
-                    <div class="card-content">
-                    <p>Platzi</p>
-                    <h6>Figma: Técnicas avanzadas de diseño</h6>
-                    <p class="year">2024</p>
-                    </div>
-                </div>
+  <!-- ============ FOOTER ============ -->
+  <footer id="contact" class="site-footer">
+    <div class="site-footer__inner">
 
-                <div class="certificate-card">
-                    <img src="./images/diploma-ux-testing_page-0001.jpg" alt="Certificado 3">
-                    <div class="card-content">
-                    <p>Platzi</p>
-                    <h6>Curso: CX research y UX testing</h6>
-                    <p class="year">2024</p>
-                    </div>
-                </div>
-                </div>
+      <div class="site-footer__top">
+        <span class="section-header__eyebrow">Get in touch</span>
+        <h2 class="site-footer__title">Say hi!</h2>
+        <a class="btn btn--primary site-footer__cta" href="mailto:felipe23pena@gmail.com">Let's talk</a>
+      </div>
 
-                <div class="carousel-dots">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
-                </div>
-            </div>
-
-            <a class="button fade-in" target="_blank" href="https://platzi.com/p/jfelipepv/">View more</a>
-        </section>
-
-        <div id="proyectos" class="proyectos fade-in">
-            <div class="content--title">
-                <span>[My featured projects]</span>
-                <h2>From vision to result</h2>
-            </div>
-            <div class="proyectos_container">
-
-                <a href="https://www.behance.net/gallery/237589807/estrellas-app-Website" target="_blank">
-                    <div class="article-card">
-                        <img src="./images/Portada-estrellas.png" alt="article-cover" />
-                        <div class="content">
-                            <span>[Case study]</span>
-                            <h6 class="title">estrellas app | Website</h6>
-                            <div class="calendar">
-                                <img src="./images/Calendar today.svg" alt="calendar-logo" />
-                                <p class="date">Oct 30, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://www.behance.net/gallery/236279835/Chatea-Pro-Landing-page" target="_blank">
-                    <div class="article-card">
-                        <img src="./images/Portada-chateapro.png" alt="article-cover" />
-                        <div class="content">
-                            <span>[Case study]</span>
-                            <h6 class="title">Chatea Pro | Landing page</h6>
-                            <div class="calendar">
-                                <img src="./images/Calendar today.svg" alt="calendar-logo" />
-                                <p class="date">Oct 10, 2025</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://www.behance.net/gallery/227227701/Hunter-Platform-User-Certificate-Flow-Design" target="_blank">
-                    <div class="article-card">
-                        <img src="./images/Portada-Hunter.jpg" alt="article-cover" />
-                        <div class="content">
-                            <span>[Case study]</span>
-                            <h6 class="title">Hunter Platform | User & Certificate Flow Design</h6>
-                            <div class="calendar">
-                                <img src="./images/Calendar today.svg" alt="calendar-logo" />
-                                <p class="date">Jun 1, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://www.behance.net/gallery/219436901/Canola-Life-Website-redesign" target="_blank">
-                    <div class="article-card">
-                        <img src="./images/Portada-Canola-Life.jpg" alt="article-cover" />
-                        <div class="content">
-                            <span>[Case study]</span>
-                            <h6 class="title">Canola Life | Website redesign</h6>
-                            <div class="calendar">
-                                <img src="./images/Calendar today.svg" alt="calendar-logo" />
-                                <p class="date">Feb 16, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-            </div>
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <span class="site-footer__label">Email</span>
+          <a href="mailto:felipe23pena@gmail.com">felipe23pena@gmail.com</a>
         </div>
-
-    </main>
-    <footer id="contacto" class="fade-in">
-        <div class="contacto-container">
-            <div class="contacto-container__1">
-                <h2>Let's work together</h2>
-                <div class="redes">
-                    <a class="button fade-in" href="https://www.linkedin.com/in/juan-felipe-pe%C3%B1a-vacilescu/" target="__blank">LinkedIn</a>
-                    <a class="button fade-in" href="https://www.behance.net/felipepea11" target="__blank">Behance</a>
-                </div>
-            </div>
-
-            <div class="contacto-container__2">
-                <h6>Drop me a line</h6>
-                <a class="fade-in" href="mailto:felipe23pena@gmail.com"><p>felipe23pena@gmail.com</p></a>
-            </div>
+        <div class="site-footer__col">
+          <span class="site-footer__label">Location</span>
+          <span>Cali, Colombia</span>
         </div>
+        <div class="site-footer__col">
+          <span class="site-footer__label">Social</span>
+          <ul class="site-footer__social">
+            <li><a href="https://www.linkedin.com/in/juan-felipe-pe%C3%B1a-vacilescu/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.behance.net/felipepea11" target="_blank" rel="noopener">Behance ↗</a></li>
+          </ul>
+        </div>
+      </div>
 
-    </footer>
-    <script src="./js/index.js" defer></script>
-    <script src="https://kit.fontawesome.com/337f26dd2f.js" crossorigin="anonymous"></script>
+      <div class="site-footer__bottom">
+        <span>© 2026 Juan Felipe Peña · UX/UI Designer | No-Code Developer</span>
+        <a href="#hero" class="site-footer__back">Back to top ↑</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./js/index.js" defer></script>
 </body>
 </html>

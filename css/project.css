@@ -1,0 +1,377 @@
+/* ============================================
+   PROJECT — CASE STUDY STYLES
+   Imports styles.css globals (theme tokens, header, footer, buttons)
+   ============================================ */
+
+/* ============================================
+   PROJECT HERO
+   ============================================ */
+
+.project-hero {
+  padding: 14rem 2.4rem 6rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .project-hero { padding: 18rem 4rem 8rem; }
+}
+
+.project-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 4rem;
+  transition: color 0.2s ease, transform 0.3s ease;
+}
+
+.project-hero__back:hover {
+  color: var(--accent);
+  transform: translateX(-4px);
+}
+
+.project-hero__eyebrow {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-hero__eyebrow::before { content: "["; margin-right: 0.4rem; }
+.project-hero__eyebrow::after { content: "]"; margin-left: 0.4rem; }
+
+.project-hero__title {
+  font-size: clamp(4.8rem, 10vw, 10rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin: 1.6rem 0 2rem;
+}
+
+.project-hero__tagline {
+  font-size: clamp(1.8rem, 2.4vw, 2.4rem);
+  font-weight: 400;
+  color: var(--text-muted);
+  max-width: 65ch;
+  line-height: 1.4;
+}
+
+/* Metadata grid */
+.project-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.2rem;
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 640px) {
+  .project-meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-meta {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+  }
+}
+
+.project-meta__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project-meta__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-meta__value {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ============================================
+   PROJECT BLOCKS (narrative content)
+   ============================================ */
+
+.project-block {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .project-block { padding: 8rem 4rem; }
+}
+
+.project-block__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .project-block__inner {
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+  }
+}
+
+.project-block__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project-block__index {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+.project-block__title {
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.project-block__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-block__body p {
+  font-size: clamp(1.6rem, 1.8vw, 1.8rem);
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.project-block__body p strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.project-block__body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 0;
+}
+
+.project-block__body ul li {
+  font-size: clamp(1.6rem, 1.8vw, 1.8rem);
+  line-height: 1.6;
+  color: var(--text);
+  padding-left: 2.4rem;
+  position: relative;
+}
+
+.project-block__body ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ============================================
+   PROJECT MEDIA (images)
+   ============================================ */
+
+.project-media {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.4rem 6rem;
+}
+
+@media (min-width: 768px) {
+  .project-media { padding: 0 4rem 8rem; }
+}
+
+.project-media--full {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.project-media__figure {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.project-media__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+/* Override para grid de mockups (3 columnas) — proporción más cuadrada */
+.project-media-grid--3 .project-media__image {
+  aspect-ratio: 9 / 16;
+}
+
+/* Multi-image row */
+.project-media-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.4rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .project-media-grid {
+    padding: 0 4rem 8rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+  }
+}
+
+.project-media-grid--3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .project-media-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================
+   PROJECT INTRO (overview after hero)
+   ============================================ */
+
+.project-intro {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2.4rem 6rem;
+}
+
+@media (min-width: 768px) {
+  .project-intro { padding: 4rem 4rem 8rem; }
+}
+
+.project-intro__lead {
+  font-size: clamp(2rem, 2.6vw, 2.8rem);
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  max-width: 65ch;
+  margin-bottom: 6rem;
+}
+
+.project-intro__columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+  .project-intro__columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+}
+
+.project-intro__column h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.project-intro__column p {
+  font-size: clamp(1.6rem, 1.8vw, 1.8rem);
+  line-height: 1.55;
+  color: var(--text);
+}
+
+/* ============================================
+   MORE PROJECTS (footer related)
+   ============================================ */
+
+.more-projects {
+  border-top: 1px solid var(--border);
+  padding: 10rem 2.4rem 8rem;
+  max-width: 1280px;
+  margin: 6rem auto 0;
+}
+
+@media (min-width: 768px) {
+  .more-projects { padding: 12rem 4rem 10rem; }
+}
+
+.more-projects__header {
+  margin-bottom: 6rem;
+}
+
+.more-projects__title {
+  font-size: clamp(3.2rem, 6vw, 5.6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.more-projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .more-projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+}
+
+/* ============================================
+   PROJECT DIVIDER (optional separator)
+   ============================================ */
+
+.project-divider {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .project-divider { padding: 0 4rem; }
+}
+
+.project-divider hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}

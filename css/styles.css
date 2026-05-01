@@ -60,6 +60,7 @@ button {
 :root[data-theme="light"] {
   --bg: #F5F5F2;
   --bg-elevated: #ECECE6;
+  --project-img-bg: #ECECE6;
   --text: #050C0D;
   --text-muted: #5A6363;
   --border: #D5D5D0;
@@ -74,6 +75,7 @@ button {
 :root[data-theme="dark"] {
   --bg: #050C0D;
   --bg-elevated: #0A1314;
+  --project-img-bg: #0A1314;
   --text: #F5F5F2;
   --text-muted: #9AA3A3;
   --border: #1E2626;
@@ -669,7 +671,7 @@ body.no-scroll { overflow: hidden; }
   font-size: 1.5rem;
   color: var(--text-muted);
   line-height: 1.5;
-  max-width: 50ch;
+  max-width: 100%;
 }
 
 .work-card__tags {
